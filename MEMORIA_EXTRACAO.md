@@ -322,3 +322,83 @@ O professor cobre os capítulos **13 a 20** (slide 10). O cap. 20 é "Globaliza�
 ---
 
 *Este arquivo deve ser lido ANTES de qualquer outra coisa na próxima sessão.*
+
+---
+
+## 7. REFAZIMENTO v2 — GUIA COMPLETO PF — 19/05/2026
+
+**Sessão:** 19/05/2026 (continuação da sessão 18/05/2026)  
+**Produto:** `guia_de_estudos.html` v2 — **GUIA COMPLETO** para a Prova Final  
+**Tamanho final:** 206,603 chars (~207 KB)  
+**Repositório GitHub:** `Macro-Internacional-PF` (GuilhermeBFL)
+
+### 7.1 Diferença v1 → v2
+
+| Aspecto | v1 (18/05/2026) | v2 (19/05/2026) |
+|---------|----------------|----------------|
+| Foco | Prioritário nas PIs (revisão do que já caiu) | Prioritário no que **NÃO** caiu nas PIs (conteúdo novo para PF) |
+| Exercícios | 30 questões de lista | 36 exercícios (30 lista + 6 PI/KOM) |
+| Apêndice | 5 questões complementares | 9 questões (zeragem total: 30/30 listas) |
+| Caps cobertos | 13-17 com profundidade | 13-19 com profundidade |
+| SVGs | 3 (mercado FX, overshooting, DD-AA) | 5 (+Trilema Mundell, +Swan IB/EB) |
+| Cola Rápida | Não incluída | Seção completa (10 blocos de fórmulas) |
+| L4Q8 (risco fiscal) | No apêndice v1 | No apêndice v2 ✓ (MANDATÓRIO) |
+
+### 7.2 Mapeamento final dos exercícios v2
+
+**Cap 13 — REVISÃO RÁPIDA:**
+- ex-01: Lista 1 Q1 (ANPEC — BdP, identidades)
+- ex-02: Lista 1 Q4 (ANPEC 2013 — lançamentos no BdP)
+- ex-03: Lista 1 Q5 (ANPEC 2015 — saldos do BdP)
+
+**Cap 14 — REVISÃO RÁPIDA:**
+- ex-04: Lista 1 Q6a (PDJ — hot dog/lanche)
+- ex-05: Lista 1 Q8 (PDJ — expectativas cambiais)
+- ex-06: Lista 2 Q5 (PDJ com risco-país)
+
+**Cap 15 — REVISÃO:**
+- ex-07: Lista 2 Q1 (equilíbrio monetário)
+- ex-08: Lista 2 Q2 (overshooting — gráfico duplo)
+- ex-09: Lista 2 Q3 (risco-país e câmbio)
+- ex-10: Lista 2 Q4 (efeito Fisher)
+
+**Cap 16 — PRIORITÁRIO:**
+- ex-11 a ex-16: Lista 3 Q1–Q6 (PPC, câmbio real, Tarifaço, migrações)
+
+**Cap 17 — PRIORITÁRIO:**
+- ex-17 a ex-21: Lista 4 Q1–Q5 (DD-AA, tarifas, lei de orçamento)
+- ex-22: PI 2025.2 Q1C (contração monetária temporária — DD-AA)
+
+**Cap 18 — PRIORITÁRIO MÁXIMO:**
+- ex-23 a ex-30: KOM PT Cap.18 P1, P3, P4, P6, P7, P8, P9, P10
+
+**Cap 19 — PRIORITÁRIO:**
+- ex-31 a ex-36: KOM PT Cap.19 P1, P2, P3, P5, P6, P9
+
+**Apêndice (9 questões):**
+- A1: L1Q2 | A2: L1Q3 | A3: L1Q7 | A4: L1Q9 | A5: L1Q10
+- A6: L3Q7 | A7: L4Q6 | A8: L4Q7 | **A9: L4Q8 (prêmio de risco fiscal — MANDATÓRIO no apêndice)**
+
+**Total questões de lista cobertas: 30/30 ✓ (ZERAGEM TOTAL)**
+
+### 7.3 SVGs criados na v2
+
+| SVG | Localização | Conteúdo |
+|-----|-------------|----------|
+| SVG 1 | Cap 14 | Mercado de câmbio (curva de retorno esperado + R$ vertical) |
+| SVG 2 | Cap 15 | Duplo painel: overshooting (câmbio + monetário, eixo R$ compartilhado) |
+| SVG 3 | Cap 17 | Diagrama DD-AA com setas de deslocamento (PF como exemplo) |
+| SVG 4 | Cap 18 | Trilema de Mundell (triângulo com 3 regimes: Zona Euro, China, EUA/Brasil) |
+| SVG 5 | Cap 19 | Diagrama de Swan IB/EB (EI inclinação negativa, EE positiva, ponto China 2008) |
+
+### 7.4 Seções temp criadas e merged
+
+| Arquivo | Conteúdo | Status |
+|---------|----------|--------|
+| `_sec2_temp.html` | Cap 13 + Cap 14 (ex-01 a ex-06) + SVG 1 | Merged ✓ |
+| `_sec3_temp.html` | Cap 15 (ex-07 a ex-10) + SVG 2 | Merged ✓ |
+| `_sec4_temp.html` | Cap 16 (ex-11 a ex-16) | Merged ✓ |
+| `_sec5_temp.html` | Cap 17 (ex-17 a ex-22) + SVG 3 | Merged ✓ |
+| `_sec6a_temp.html` | Cap 18 (ex-23 a ex-30) + SVG 4 | Merged ✓ |
+| `_sec7_temp.html` | Cap 19 (ex-31 a ex-36) + SVG 5 | Merged ✓ |
+| `_sec8_temp.html` | Apêndice (A1-A9) + Cola Rápida | Merged ✓ |

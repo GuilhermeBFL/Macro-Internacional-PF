@@ -41,5 +41,20 @@ Abra `guia_de_estudos.html` em qualquer navegador moderno. Não requer servidor 
 - Anotações de caderno do professor (transcritas)
 - KOM 12ª ed. capítulos 13–19
 
+## Versões
+
+| Versão | Data | Descrição |
+|--------|------|-----------|
+| v1 | 18/05/2026 | Guia inicial — foco em caps 13–17 com ênfase no que caiu nas PIs |
+| **v2** | **19/05/2026** | **Guia completo PF — caps 13–19 · 36 exercícios + 9 apêndice · 5 SVGs · Cola Rápida · ZERAGEM TOTAL das listas (30/30)** |
+
+### Novidades da v2
+
+- **Cap 18** (câmbio fixo) — 8 exercícios com foco no Bloco 8 do professor (PM ineficaz, PF eficaz, desvalorização) + SVG Trilema de Mundell
+- **Cap 19** (sistemas monetários históricos) — 6 exercícios (Hume, padrão-ouro, Bretton Woods, diagrama de Swan) + SVG IB/EB
+- **Apêndice completo** — 9 questões restantes das listas (incluindo L4Q8 prêmio de risco fiscal)
+- **Cola Rápida** — seção de referência rápida com 10 blocos de fórmulas para a PF
+- **ZERAGEM TOTAL** — todas as 30 questões de lista 2026.1 estão presentes (22 no guia + 9 no apêndice = 30)
+
 ---
 *Gerado com Claude Code (Sonnet 4.6) — Maio 2026*
