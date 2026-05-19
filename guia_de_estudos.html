@@ -1,0 +1,1720 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Guia PF 2026.1 — Macroeconomia Internacional</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;max-width:960px;margin:0 auto;padding:2em 1.5em;background:#f4f6fa;color:#1a1a2e;line-height:1.85}
+h1{font-size:2em;color:#1a3a8f;border-bottom:3px solid #1a3a8f;padding-bottom:.4em;margin-bottom:.4em}
+h2{font-size:1.45em;color:#1a3a8f;margin:2em 0 .5em;padding-left:.5em;border-left:4px solid #1a3a8f}
+h3{font-size:1.1em;color:#333;margin:1.2em 0 .4em}
+h4{font-size:.95em;color:#555;margin:.8em 0 .3em}
+p{margin:.55em 0}
+ul,ol{margin:.4em 0;padding-left:1.4em}
+li{margin:.2em 0}
+blockquote{border-left:3px solid #aaa;padding-left:1em;color:#555;font-style:italic;margin:1em 0}
+a{color:#1a3a8f;text-decoration:none}
+a:hover{text-decoration:underline}
+.frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin:0 .2em}
+.frac .num{padding:0 .4em .12em;border-bottom:1.5px solid currentColor}
+.frac .den{padding:.12em .4em 0}
+.fb{max-width:620px;margin:1.3em auto;padding:1em 1.6em;background:#f8f9ff;border:1px solid #ccd;border-radius:7px;text-align:center;line-height:2.6;font-size:1.05em}
+.fb .fl{display:block;text-align:left;font-size:.78em;color:#777;font-style:italic;margin-bottom:.3em}
+.fr{color:#1a3a8f;font-weight:700}
+.fs{display:block;margin:.5em 0;padding-top:.5em;border-top:1px dashed #ccd}
+.term{border-bottom:2px dotted #b04000;color:#b04000;cursor:help;position:relative;white-space:nowrap}
+.term .tt{display:none;position:absolute;bottom:130%;left:50%;transform:translateX(-50%);background:#1a1a2e;color:#fff;padding:.5em .9em;border-radius:6px;font-size:.8em;width:270px;line-height:1.5;z-index:999;pointer-events:none;font-style:normal;text-align:left;white-space:normal}
+.term:hover .tt{display:block}
+.badge{display:inline-block;padding:.15em .6em;border-radius:12px;font-size:.75em;font-weight:700;margin-left:.5em}
+.b-f{background:#d4edda;color:#155724}
+.b-mf{background:#cce5ff;color:#004085}
+.b-m{background:#fff3cd;color:#856404}
+.b-md{background:#ffe0b2;color:#e65100}
+.b-d{background:#f8d7da;color:#721c24}
+.b-p{background:#d6d8d9;color:#1b1e21}
+.b-pr{background:#c62828;color:#fff;margin-left:.4em}
+.b-co{background:#388e3c;color:#fff;margin-left:.4em}
+.ex{margin:2em 0;padding:1.4em 1.6em;border-left:4px solid #1a3a8f;background:#fff;box-shadow:0 1px 5px rgba(0,0,0,.09);border-radius:0 7px 7px 0}
+.ex-hd{display:flex;align-items:center;flex-wrap:wrap;gap:.5em;margin-bottom:1em;padding-bottom:.6em;border-bottom:1px solid #eee}
+.ex-num{font-weight:700;color:#1a3a8f}
+.gbtn{margin-left:auto;background:#e8f0fe;color:#1a3a8f;border:1px solid #1a3a8f;padding:.2em .6em;border-radius:4px;cursor:pointer;font-size:.78em}
+.gp{display:none;background:#e8f0fe;border:1px solid #aac;border-radius:5px;padding:.7em 1em;margin-bottom:1em;font-size:.86em;line-height:1.6}
+.gp.open{display:block}
+.gp dt{font-weight:700;color:#1a3a8f;margin-top:.4em}
+.gp dd{margin-left:1em}
+.ex-ft{display:flex;justify-content:space-between;align-items:center;margin-top:1.2em;padding-top:.6em;border-top:1px solid #eee;flex-wrap:wrap;gap:.5em}
+.orig{font-size:.78em;color:#999;font-style:italic}
+.rb{background:#1a3a8f;color:#fff;border:none;padding:.4em 1.1em;border-radius:5px;cursor:pointer;font-size:.88em}
+.rb:hover{background:#122d73}
+.gab{display:none;margin:1em 0 2em;padding:1.5em 1.8em;background:#f0f4ff;border:1px solid #aac;border-radius:7px}
+.gab.open{display:block}
+.gab-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:1em;padding-bottom:.6em;border-bottom:2px solid #aac;flex-wrap:wrap;gap:.4em}
+.bb{background:#e8f0fe;color:#1a3a8f;border:1px solid #1a3a8f;padding:.3em .8em;border-radius:5px;cursor:pointer;font-size:.83em}
+.hr{background:#fff8e1;border-left:3px solid #f9a825;padding:.8em 1em;margin-bottom:1em;border-radius:0 5px 5px 0;font-size:.9em}
+.hr strong{display:block;margin-bottom:.3em;color:#7a5c00}
+.step{padding:.4em 0 .4em 1em;border-left:2px solid #ccc;margin:.5em 0;font-size:.95em}
+.ans{background:#e8f5e9;border:2px solid #2e7d32;border-radius:5px;padding:.6em 1em;font-weight:700;color:#1b5e20;margin:1em 0}
+.err{background:#fdecea;border-left:3px solid #c62828;padding:.7em 1em;margin-top:1em;border-radius:0 5px 5px 0;font-size:.88em}
+.err strong{display:block;margin-bottom:.3em;color:#7a1010}
+.gsrc{font-size:.78em;color:#888;margin-top:1em;font-style:italic}
+.cb{background:#e8f0fe;border-left:4px solid #1a3a8f;padding:.9em 1.2em;margin:1.2em 0;border-radius:0 5px 5px 0}
+.wb{background:#fff8e1;border-left:4px solid #f9a825;padding:.8em 1em;margin:1em 0;border-radius:0 5px 5px 0}
+.db{background:#fdecea;border-left:4px solid #c62828;padding:.8em 1em;margin:1em 0;border-radius:0 5px 5px 0}
+.map-wrap{overflow-x:auto;margin:1.2em 0}
+.mt{width:100%;border-collapse:collapse;font-size:.87em}
+.mt th{background:#1a3a8f;color:#fff;padding:.5em .7em;text-align:center}
+.mt td{padding:.4em .7em;border:1px solid #ddd;text-align:center}
+.mt tr:nth-child(even) td{background:#f9f9ff}
+.ig{background:#d4edda!important;color:#155724;font-weight:700}
+.io{background:#fff3cd!important;color:#856404;font-weight:700}
+.ir{background:#f8d7da!important;color:#721c24;font-weight:700}
+.toc{background:#fff;padding:1.4em 1.6em;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.08);margin-bottom:2em}
+.toc ol{column-count:2;column-gap:2em}
+.toc li{margin:.3em 0;font-size:.92em}
+.sec{background:#fff;padding:1.8em 2em;margin:2em 0;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.08)}
+.svg-w{text-align:center;margin:1.5em 0;overflow-x:auto}
+.svg-w figcaption{font-size:.83em;color:#555;margin-top:.4em;font-style:italic}
+.app-i{background:#fff;padding:1.3em;margin:1.4em 0;border-left:4px solid #666;border-radius:0 6px 6px 0;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+@media(max-width:640px){.toc ol{column-count:1}.ex-ft{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<h1>Guia de Estudos — Macroeconomia Internacional</h1>
+<p style="color:#555;margin-bottom:1.5em"><strong>Prova Final 2026.1</strong> &nbsp;|&nbsp; Prof. Gino Olivares &nbsp;|&nbsp; Insper &nbsp;|&nbsp; Caps. 13–19 KOM 12&#170; ed.</p>
+
+<nav class="toc" id="toc">
+<h3>&#128196; Sumário</h3>
+<ol>
+<li><a href="#t1">Cap. 13 — Contabilidade Nacional e BdP <span class="badge b-co">COMPLEMENTAR</span></a></li>
+<li><a href="#t2">Cap. 14 — Mercado de Câmbio e PDJ/UIP <span class="badge b-pr">PRIORITÁRIO</span></a></li>
+<li><a href="#t3">Cap. 15 — Mercado Monetário e Overshooting <span class="badge b-pr">PRIORITÁRIO</span></a></li>
+<li><a href="#t4">Cap. 16 — PPC, Câmbio Real e Modelo LP <span class="badge b-pr">PRIORITÁRIO</span></a></li>
+<li><a href="#t5">Cap. 17 — Modelo DD-AA <span class="badge b-pr">PRIORITÁRIO</span></a></li>
+<li><a href="#t6">Cap. 18 — Câmbio Fixo e Esterilização <span class="badge b-pr">PRIORITÁRIO</span></a></li>
+<li><a href="#t7">Cap. 19 — Sistemas Monetários Históricos <span class="badge b-co">COMPLEMENTAR</span></a></li>
+<li><a href="#maps">Mapas de Incidência (Provas + Listas)</a></li>
+<li><a href="#gabarito">Gabarito Completo</a></li>
+<li><a href="#apendice">Apêndice — Questões Restantes das Listas</a></li>
+</ol>
+</nav>
+<!-- ==================== MAPAS DE INCIDÊNCIA ==================== -->
+<section class="sec" id="maps">
+<h2>&#128202; Mapas de Incidência</h2>
+
+<h3>Etapa 4 — Incidência nas Provas Intermediárias (5 PIs, 2023–2025)</h3>
+<div class="map-wrap">
+<table class="mt">
+<thead><tr><th>Tópico</th><th>PI 2023.2</th><th>PI 2024.1</th><th>PI 2024.2</th><th>PI 2025.1</th><th>PI 2025.2</th><th>Incidência</th><th>Peso médio</th></tr></thead>
+<tbody>
+<tr><td style="text-align:left"><strong>Cap. 13</strong> — BdP e Contabilidade</td><td>—</td><td>—</td><td>—</td><td>&#10003; Q2</td><td>&#10003; Q1A/B</td><td class="io">40%</td><td>20%</td></tr>
+<tr><td style="text-align:left"><strong>Cap. 14</strong> — PDJ/UIP e Mercado FX</td><td>&#10003; Q3</td><td>—</td><td>&#10003; Q3</td><td>—</td><td>&#10003; Q1D</td><td class="io">60%</td><td>25%</td></tr>
+<tr><td style="text-align:left"><strong>Cap. 15</strong> — Mercado Mon. + Overshooting</td><td>&#10003;&#10003; Q1/Q2</td><td>&#10003; Q1</td><td>&#10003; Q2</td><td>&#10003; Q1</td><td>&#10003;&#10003; Q1C/D</td><td class="ig">100%</td><td>40%</td></tr>
+<tr><td style="text-align:left"><strong>Cap. 16</strong> — PPC, Câmbio Real e LP</td><td>—</td><td>&#10003;&#10003; Q2/Q3</td><td>&#10003; Q1</td><td>&#10003;&#10003; Q3a/b</td><td>&#10003;&#10003; Q2</td><td class="ig">100%</td><td>35%</td></tr>
+<tr><td style="text-align:left"><strong>Cap. 17</strong> — Modelo DD-AA</td><td>—</td><td>—</td><td>—</td><td>&#10003; Q1</td><td>—</td><td class="io">20%</td><td>20%</td></tr>
+<tr><td style="text-align:left"><strong>Cap. 18</strong> — Câmbio Fixo</td><td>&#10003; Q3b</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="ir">20%</td><td>15%</td></tr>
+<tr><td style="text-align:left"><strong>Cap. 19</strong> — Sistemas Monetários</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="ir">0%</td><td>0%</td></tr>
+</tbody>
+</table>
+</div>
+<div class="cb" style="margin-top:1.2em">
+<strong>&#128269; Padrões do professor nas provas:</strong>
+<ul style="margin-top:.5em">
+<li>Sempre pede <strong>gráfico duplo</strong> (câmbio + monetário, eixo R$ compartilhado) — aparece em 100% das PIs de Cap. 15</li>
+<li>Sempre pede <strong>intuição econômica explícita</strong> — respostas sem intuição perdem pontos mesmo se o gráfico estiver correto</li>
+<li>Câmbio real + nominal no longo prazo aparece em 80% das provas (Cap. 16)</li>
+<li>Taylor &amp; Taylor (PPC) apareceu em PI 2024.1 e PI 2025.1 — alta probabilidade de cair novamente</li>
+<li>Perguntas sobre situações reais (Trump, IA, armamento Europa) são contexto para aplicar a teoria — não mudam o modelo</li>
+</ul>
+</div>
+
+<h3 style="margin-top:1.8em">Etapa 5 — Incidência nas Listas de Exercícios</h3>
+<div class="map-wrap">
+<table class="mt">
+<thead><tr><th>Tópico</th><th>Lista 1<br>(10 Qs)</th><th>Lista 2<br>(5 Qs)</th><th>Lista 3<br>(7 Qs)</th><th>Lista 4<br>(8 Qs)</th><th>Total</th></tr></thead>
+<tbody>
+<tr><td style="text-align:left">Cap. 13 — BdP</td><td class="io">5 Qs</td><td>—</td><td>—</td><td>—</td><td>5</td></tr>
+<tr><td style="text-align:left">Cap. 14 — PDJ/UIP</td><td class="ig">5 Qs</td><td class="io">1 Q</td><td>—</td><td>—</td><td>6</td></tr>
+<tr><td style="text-align:left">Cap. 15 — Mercado Monetário</td><td>—</td><td class="ig">4 Qs</td><td>—</td><td>—</td><td>4</td></tr>
+<tr><td style="text-align:left">Cap. 16 — PPC e LP</td><td>—</td><td>—</td><td class="ig">7 Qs</td><td>—</td><td>7</td></tr>
+<tr><td style="text-align:left">Cap. 17 — DD-AA</td><td>—</td><td>—</td><td>—</td><td class="ig">8 Qs</td><td>8</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:.85em;color:#777;margin-top:.5em">&#9888; Todas as 30 questões das listas estão cobertas neste guia (25 no corpo principal + 5 no Apêndice).</p>
+</section>
+
+<!-- ==================== TÓPICO 1: CAP 13 ==================== -->
+<section class="sec" id="t1">
+<h2>Tópico 1 — Cap. 13: Contabilidade Nacional e Balanço de Pagamentos <span class="badge b-co">COMPLEMENTAR</span></h2>
+
+<h3>&#128161; Explicação simplificada</h3>
+<p>Imagine que a economia de um país é como a conta bancária de uma família. O que a família <em>produz</em> (salário) é o PIB. O que a família <em>recebe</em> como rendimentos de investimentos lá fora (dividendos, juros) faz parte da <strong>Renda Nacional Bruta (RNB)</strong>. Se a família gasta mais do que ganha, ela está em déficit — e esse déficit tem que ser financiado de alguma forma: alguém de fora precisa emprestar ou investir no país.</p>
+<p>O <span class="term">BdP<span class="tt">Balanço de Pagamentos — registro contábil de todas as transações econômicas de um país com o resto do mundo em determinado período. O prof. usa "BdP", não "BP".</span></span> registra esse fluxo de entradas e saídas. Tem três contas principais: <span class="term">TC<span class="tt">Transações Correntes (= Conta Corrente / CA): exportações + importações de bens e serviços + rendas + transferências. TC > 0 = superávit = o país está acumulando riqueza externa.</span></span>, <span class="term">KA<span class="tt">Conta de Capital: transferências de capital (pequena e quase sempre ≈ 0 no Brasil).</span></span> e <span class="term">FA<span class="tt">Conta Financeira (= Conta de Capital no KOM antigo): registra fluxos de investimentos — IED, carteira, derivativos, outros. FA > 0 = entradas de capital. No sistema moderno do FMI: FA > 0 no Brasil quando há entrada líquida.</span></span>.</p>
+
+<div class="cb">
+<strong>Identidades fundamentais:</strong><br>
+<strong>BdP:</strong> TC + KA + FA + Variação de Reservas = 0<br>
+<strong>Macroeconômica:</strong> <em>CA = S<sub>p</sub> + S<sub>g</sub> − I</em> &nbsp;(CA = Poupança total − Investimento)<br>
+<strong>Em forma de desequilíbrio:</strong> se CA &lt; 0, então I &gt; S (o país está investindo mais do que poupando — financiado pelo exterior)
+</div>
+
+<h3>Exercícios</h3>
+
+<div class="ex" id="ex-01">
+<div class="ex-hd">
+<span class="ex-num">Exercício 1</span><span class="badge b-f">FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-01')">&#9658; Glossário</button>
+</div>
+<div class="gp" id="gp-ex-01">
+<dl>
+<dt>RNB</dt><dd>Renda Nacional Bruta = PIB + rendas recebidas do exterior − rendas enviadas ao exterior</dd>
+<dt>PIB vs PNB/RNB</dt><dd>PIB mede o que é produzido <em>no território</em>; RNB mede o que é recebido pelos <em>residentes</em></dd>
+<dt>CA = S − I</dt><dd>Conta corrente = poupança total (privada + governo) menos investimento</dd>
+</dl>
+</div>
+<div class="ex-body">
+<p><strong>Assinale V (Verdadeiro) ou F (Falso) e justifique:</strong></p>
+<div class="sub">
+<p>1) A remessa de dinheiro de brasileiros que residem no exterior a familiares no Brasil aumenta a Renda Nacional Bruta.</p>
+<p>2) Quando em um país operam um grande número de empresas estrangeiras, ao mesmo tempo em que poucas empresas e residentes deste país operam em outras economias, o PIB será maior que o PNB.</p>
+<p>3) Havendo equilíbrio nas contas do governo, um déficit em transações correntes do balanço de pagamentos implica um excesso de investimentos.</p>
+<p>4) Diferentemente de uma economia fechada, em uma economia aberta é possível aumentar a formação de capital bruta mantendo constante a poupança agregada.</p>
+</div>
+</div>
+<div class="ex-ft">
+<span class="orig">Origem: Lista 1, Q1</span>
+<button class="rb" data-gab="gab-01">&#8595; Ver gabarito desta questão</button>
+</div>
+</div>
+
+<div class="ex" id="ex-02">
+<div class="ex-hd">
+<span class="ex-num">Exercício 2</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-02')">&#9658; Glossário</button>
+</div>
+<div class="gp" id="gp-ex-02">
+<dl>
+<dt>Transações correntes (TC)</dt><dd>Exportações + importações de bens e serviços + renda primária + renda secundária</dd>
+<dt>Conta financeira (FA)</dt><dd>IED, investimentos em carteira, outros investimentos, derivativos</dd>
+<dt>Reservas internacionais</dt><dd>Ativos externos do BC (ouro, divisas, títulos estrangeiros)</dd>
+<dt>PIB vs PNB</dt><dd>PIB &gt; PNB quando país paga mais renda ao exterior do que recebe (muitas empresas estrangeiras operando)</dd>
+</dl>
+</div>
+<div class="ex-body">
+<p>Considere as seguintes transações realizadas entre os residentes e não-residentes de um país em determinado período (em milhões de dólares):</p>
+<ul>
+<li>A. O país importa, pagando à vista, mercadorias no valor de 350</li>
+<li>B. O país importa equipamentos no valor de 50 financiados a prazo longo</li>
+<li>C. Ingressam no país, sob forma de IED sem cobertura cambial, 20 em equipamentos</li>
+<li>D. O país exporta, recebendo à vista, 400 de mercadorias</li>
+<li>E. O país paga ao exterior, à vista, 50 de fretes</li>
+<li>F. Remete-se para o exterior 10 de lucros de companhias estrangeiras, 20 de juros e 30 de amortizações</li>
+<li>G. O país recebe 10 de donativos sob a forma de mercadorias</li>
+</ul>
+<p style="margin-top:.8em">Julgue as afirmativas como Verdadeiro ou Falso:</p>
+<div class="sub">
+<p>(a) As importações foram de US$ 430 milhões.</p>
+<p>(b) O país teve um déficit em transações correntes de US$ 100 milhões.</p>
+<p>(c) O PIB deste país foi menor que o PNB.</p>
+<p>(d) Houve um aumento de US$ 60 milhões nas reservas internacionais do país.</p>
+<p>(e) Supondo que o governo teve orçamento equilibrado, a poupança privada foi maior que o investimento agregado no período.</p>
+</div>
+</div>
+<div class="ex-ft">
+<span class="orig">Origem: Lista 1, Q4 (ANPEC 2013 Q12)</span>
+<button class="rb" data-gab="gab-02">&#8595; Ver gabarito desta questão</button>
+</div>
+</div>
+
+<div class="ex" id="ex-03">
+<div class="ex-hd">
+<span class="ex-num">Exercício 3</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-03')">&#9658; Glossário</button>
+</div>
+<div class="gp" id="gp-ex-03">
+<dl>
+<dt>Balança comercial</dt><dd>Exportações FOB − Importações FOB (só bens, sem serviços)</dd>
+<dt>Conta de serviços</dt><dd>Fretes, viagens, seguros, outros serviços internacionais</dd>
+<dt>Variação de reservas</dt><dd>CA + FA + KA = −ΔReservas (convenção: entrada de capital é positiva na FA)</dd>
+</dl>
+</div>
+<div class="ex-body">
+<p>As operações abaixo foram registradas para uma economia durante o ano <em>t</em> (US$ Bilhões):</p>
+<ul>
+<li>Recebimento de doações humanitárias em moeda forte: 1</li>
+<li>Importações de mercadorias (FOB): 7</li>
+<li>Pagamento de amortizações da dívida externa: 13</li>
+<li>Pagamentos de juros da dívida externa: 5</li>
+<li>Exportações de mercadorias (FOB): 15</li>
+<li>Recebimento de novos empréstimos e financiamento do exterior: 16</li>
+<li>Pagamentos de fretes internacionais: 3</li>
+</ul>
+<p style="margin-top:.8em">Classifique as afirmativas como V (Verdadeiras) ou F (Falsas):</p>
+<div class="sub">
+<p>(a) O saldo da balança comercial foi de US$ 5 bilhões.</p>
+<p>(b) O saldo da conta de transações correntes foi de US$ 1 bilhão.</p>
+<p>(c) O saldo da conta de serviços foi deficitário em US$ 3 bilhões.</p>
+<p>(d) As reservas internacionais aumentaram em US$ 4 bilhões.</p>
+</div>
+</div>
+<div class="ex-ft">
+<span class="orig">Origem: Lista 1, Q5 (ANPEC 2015 Q1)</span>
+<button class="rb" data-gab="gab-03">&#8595; Ver gabarito desta questão</button>
+</div>
+</div>
+
+<div class="ex" id="ex-04">
+<div class="ex-hd">
+<span class="ex-num">Exercício 4</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-04')">&#9658; Glossário</button>
+</div>
+<div class="gp" id="gp-ex-04">
+<dl>
+<dt>Absorção</dt><dd>A = C + I + G (total de gasto doméstico). CA = Y − A (PIB menos absorção)</dd>
+<dt>Riqueza externa líquida</dt><dd>Posição Internacional de Investimentos (NIIP) = ativos externos − passivos externos</dd>
+</dl>
+</div>
+<div class="ex-body">
+<p><strong>Assinale a alternativa correta</strong> sobre Contabilidade Nacional em economias abertas:</p>
+<ol type="a">
+<li>Se o PIB for maior que a absorção, o saldo em conta corrente será positivo.</li>
+<li>A riqueza externa de um país pode aumentar, ainda que ele esteja deficitário na conta corrente.</li>
+<li>Um país cuja produção é maior que a absorção no curto prazo está importando consumo presente e exportando consumo futuro.</li>
+<li>Em uma economia aberta, a poupança só é possível através da aquisição de riqueza externa.</li>
+<li>Um país cujo saldo em conta corrente é positivo está em um momento de aumento de sua riqueza externa líquida.</li>
+</ol>
+</div>
+<div class="ex-ft">
+<span class="orig">Origem: PI 2025.2, Q1A</span>
+<button class="rb" data-gab="gab-04">&#8595; Ver gabarito desta questão</button>
+</div>
+</div>
+
+<div class="ex" id="ex-05">
+<div class="ex-hd">
+<span class="ex-num">Exercício 5</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-05')">&#9658; Glossário</button>
+</div>
+<div class="gp" id="gp-ex-05">
+<dl>
+<dt>NIIP (Posição Internacional de Inv.)</dt><dd>Estoque líquido de riqueza externa. Pode melhorar mesmo com déficit em CC via variação cambial ou valorização de ativos.</dd>
+<dt>Conta financeira (FA)</dt><dd>Pelo princípio da partida dobrada: TC + KA + FA = 0 (simplificando, sem reservas). CC deficitária → FA superavitária (entradas de capital).</dd>
+</dl>
+</div>
+<div class="ex-body">
+<p>Sobre a estrutura do Balanço de Pagamentos, <strong>assinale a alternativa INCORRETA</strong>:</p>
+<ol type="a">
+<li>O Balanço de Pagamentos é um registro detalhado das transações de um país com o resto do mundo.</li>
+<li>Um país pode apresentar superávit em conta corrente indefinidamente sem que isso afete sua posição internacional de investimento líquido.</li>
+<li>Sendo o saldo da conta de capital igual a zero, um saldo negativo da conta corrente desencadeará também um saldo negativo na conta financeira.</li>
+<li>Mesmo registrando sucessivos déficits em conta corrente entre 2002 e 2007, os EUA conseguiram melhorar sua NIIP devido à desvalorização do dólar e melhor desempenho dos mercados acionários estrangeiros.</li>
+<li>É possível que um país tenha Posição Internacional de Investimentos negativa, e ainda assim sua Renda Líquida de Investimentos seja positiva.</li>
+</ol>
+</div>
+<div class="ex-ft">
+<span class="orig">Origem: PI 2025.2, Q1B</span>
+<button class="rb" data-gab="gab-05">&#8595; Ver gabarito desta questão</button>
+</div>
+</div>
+</section>
+<!-- ==================== TÓPICO 2: CAP 14 ==================== -->
+<section class="sec" id="t2">
+<h2>Tópico 2 — Cap. 14: Mercado de Câmbio e Paridade de Juros <span class="badge b-pr">PRIORITÁRIO</span></h2>
+
+<h3>&#128161; Explicação simplificada</h3>
+<p>Imagine que você tem R$ 1.000 e pode aplicar no Brasil (recebe juros em reais) ou converter em dólares e aplicar nos EUA (recebe juros em dólares + variação do câmbio). Qual escolher? Depende do <strong>retorno esperado</strong> de cada alternativa. O mercado de câmbio entra em equilíbrio quando os dois retornos se igualam — essa é a <strong>Paridade de Juros</strong>.</p>
+<p>A taxa de câmbio hoje (E<sub>$/€</sub> = "quantos dólares compram 1 euro") é determinada exatamente por esse equilíbrio. Se E sobe = dólar deprecia (precisa de mais dólares para 1 euro). Se E cai = dólar aprecia.</p>
+
+<div class="cb">
+<strong>Notação do professor (USE SEMPRE):</strong>
+<ul>
+<li>E<sub>$/€</sub> = dólares por euro (preço do euro em dólares)</li>
+<li>E ↑ = dólar deprecia &nbsp;|&nbsp; E ↓ = dólar aprecia</li>
+<li>E<sup>e</sup><sub>$/€</sub> = taxa de câmbio esperada no futuro</li>
+<li>R$ = taxa de juros em dólar &nbsp;|&nbsp; R€ = taxa de juros em euro</li>
+</ul>
+</div>
+
+<h3>Aprofundamento — A fórmula da PDJ</h3>
+<p>Para decidir entre um depósito em dólar e um em euro, calcule o retorno esperado de cada um em dólares:</p>
+
+<div class="fb">
+<span class="fl">Retorno esperado do depósito em euro (em dólares) — circulado com ★ nas anotações do prof.:</span>
+<span class="fr">Ret&#771;orno&#8321;€ ≈ R€ +
+<span class="frac"><span class="num">E<sup>e</sup><sub>$/€</sub> − E<sub>$/€</sub></span><span class="den">E<sub>$/€</sub></span></span></span>
+<span class="fs" style="font-size:.9em">= taxa de juros do euro <strong>+</strong> depreciação esperada do dólar</span>
+</div>
+
+<div class="fb">
+<span class="fl">Condição de Equilíbrio — Paridade Descoberta de Juros (PDJ / UIP):</span>
+<span class="fr">R$ = R€ +
+<span class="frac"><span class="num">E<sup>e</sup><sub>$/€</sub> − E<sub>$/€</sub></span><span class="den">E<sub>$/€</sub></span></span></span>
+<span class="fs" style="font-size:.88em;color:#777"><em>O prof. chama de "diferencial = 0" quando vale a PDJ. Se diferencial &gt; 0 → aplica em dólar. Se &lt; 0 → aplica em euro. Se = 0 → "tanto faz".</em></span>
+</div>
+
+<div class="warn"><strong>&#9888; Material Extra (aula 13/05/26, não está no livro):</strong> Com risco de default no ativo doméstico, a PDJ vira: <em>(1−p)·(1+R) = (1+R*)·(1+(E<sup>e</sup>−E)/E)</em> — o ativo doméstico precisa pagar mais para compensar o risco. Esse é o prêmio de risco.</div>
+
+<h3>Gráfico de Equilíbrio no Mercado de Câmbio</h3>
+<div class="svg-w">
+<figure>
+<svg width="400" height="330" viewBox="0 0 400 330" style="max-width:100%;font-family:Georgia,serif">
+  <defs><marker id="ah" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#333"/></marker></defs>
+  <!-- axes -->
+  <line x1="60" y1="280" x2="370" y2="280" stroke="#333" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="60" y1="280" x2="60" y2="20" stroke="#333" stroke-width="1.5" marker-end="url(#ah)"/>
+  <!-- axis labels -->
+  <text x="375" y="284" font-size="13" fill="#333">R$</text>
+  <text x="22" y="18" font-size="12" fill="#333">E&#x24;/&#x20AC;</text>
+  <!-- foreign return curve (downward sloping) -->
+  <path d="M 80,60 Q 180,160 340,250" stroke="#1a3a8f" stroke-width="2.5" fill="none"/>
+  <text x="200" y="125" font-size="11" fill="#1a3a8f" transform="rotate(-30,200,125)">R&#8364; + (E&#7497;&#8722;E)/E</text>
+  <!-- domestic return (vertical) -->
+  <line x1="220" y1="30" x2="220" y2="280" stroke="#c62828" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="225" y="45" font-size="11" fill="#c62828">R$&#8320;</text>
+  <!-- equilibrium point -->
+  <circle cx="220" cy="172" r="5" fill="#1b5e20"/>
+  <!-- E0 label -->
+  <line x1="60" y1="172" x2="220" y2="172" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="30" y="176" font-size="12" fill="#1b5e20">E&#8320;</text>
+  <!-- R0 label on x-axis -->
+  <line x1="220" y1="280" x2="220" y2="285" stroke="#333" stroke-width="1.5"/>
+  <text x="211" y="298" font-size="12" fill="#333">R$&#8320;</text>
+  <!-- legend -->
+  <text x="70" y="315" font-size="10" fill="#1a3a8f">&#9632; Retorno Euro</text>
+  <text x="210" y="315" font-size="10" fill="#c62828">&#9135;&#9135; Retorno Dólar</text>
+</svg>
+<figcaption>Equilíbrio no mercado de câmbio: onde o retorno do euro iguala o do dólar. E sobe quando R$ cai ou quando E<sup>e</sup> sobe.</figcaption>
+</figure>
+</div>
+
+<h3>Exercícios</h3>
+
+<div class="ex" id="ex-06">
+<div class="ex-hd"><span class="ex-num">Exercício 6</span><span class="badge b-f">FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-06')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-06">
+<dl><dt>Taxa de câmbio nominal</dt><dd>Preço de uma moeda em outra. E = USD/EUR = "dólares por euro"</dd>
+<dt>Apreciação</dt><dd>A moeda fica mais valiosa: E (USD/EUR) cai = dólar aprecia (compra mais euros)</dd></dl>
+</div>
+<div class="ex-body">
+<p>a) Em Munique, um lanche custa 5 euros; um hot-dog custa 4 dólares em Boston. A uma taxa de câmbio de 1,50 USD/EUR, qual o preço de um lanche em termos de hot-dogs? Se o dólar se valorizar para 1,25 USD/EUR, como muda esse preço relativo? Um hot-dog tornou-se mais ou menos caro em relação a um lanche?</p>
+<p>b) O Nippon Steel Chemical Group (Japão) importa petróleo precificado em dólares. Como seus lucros (em ienes) são afetados quando o iene se deprecia em relação ao dólar?</p>
+<p>c) Se o dólar se desvaloriza, o que você esperaria que acontecesse com a terceirização internacional (<em>outsourcing</em>) por empresas americanas?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 1, Q6 (KOM 13ª ed.)</span>
+<button class="rb" data-gab="gab-06">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-07">
+<div class="ex-hd"><span class="ex-num">Exercício 7</span><span class="badge b-mf">MÉDIO-FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-07')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-07">
+<dl><dt>Expectativas e câmbio presente</dt><dd>Pela PDJ, E hoje = f(R$, R€, E<sup>e</sup>). Uma notícia sobre o futuro altera E<sup>e</sup> → E muda imediatamente</dd>
+<dt>E<sup>e</sup> (câmbio esperado)</dt><dd>Expectativa do mercado para a taxa de câmbio futura. Entra diretamente na fórmula do retorno do ativo externo.</dd></dl>
+</div>
+<div class="ex-body">
+<p>a) Investidores recebem uma notícia inesperada de que a taxa de juros do dólar (R$) irá subir significativamente no próximo trimestre. Utilize a análise diagramática da paridade de juros para determinar o efeito sobre a taxa de câmbio atual E<sub>$/€</sub>.</p>
+<p>b) O Banco Central Europeu anuncia inesperadamente que planeja <strong>reduzir</strong> as taxas de juros do euro no futuro próximo. Como essa informação sobre o futuro afeta a taxa de câmbio atual E<sub>$/€</sub>? Utilize o diagrama de equilíbrio do mercado de câmbio.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 1, Q8</span>
+<button class="rb" data-gab="gab-07">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-08">
+<div class="ex-hd"><span class="ex-num">Exercício 8</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-08')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-08">
+<dl><dt>CIP (Paridade Coberta de Juros)</dt><dd>Usa taxa forward ao invés de E<sup>e</sup>: i$ = i€ + (F − E)/E. Sem risco cambial (travou no mercado futuro). Base para calcular forward premium.</dd>
+<dt>Forward premium</dt><dd>(F − E)/E: quanto a moeda estrangeira está mais cara no mercado futuro versus o spot. Por CIP = diferencial de juros.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Considere duas moedas: o Rand Sul-Africano (ZAR) e a Naira Nigeriana (NGN). A taxa de câmbio <em>forward</em> a um ano é de 23 NGN por ZAR e a taxa <em>spot</em> é de 20 NGN por ZAR. Sendo expresso como NGN por ZAR:</p>
+<p>a) Qual é o prêmio <em>forward</em> do NGN (desconto <em>forward</em> do ZAR)?</p>
+<p>b) Qual é a diferença entre a taxa de juros dos depósitos em ZAR a um ano e a dos depósitos em NGN a um ano (assumindo ausência de risco de inadimplência)?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 1, Q9 (KOM Cap.14, Q15)</span>
+<button class="rb" data-gab="gab-08">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-09">
+<div class="ex-hd"><span class="ex-num">Exercício 9</span><span class="badge b-md">MÉDIO-DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-09')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-09">
+<dl><dt>Prêmio de risco (ρ)</dt><dd>Retorno extra exigido para investir em ativo com risco. Nova PDJ: R = R* + ρ + (E<sup>e</sup>−E)/E</dd>
+<dt>Gráfico duplo</dt><dd>Câmbio em cima (eixo Y = E) + mercado monetário embaixo (eixo Y invertido = M<sup>s</sup>/P). Eixo X compartilhado = R$. Choque em baixo → muda R$ → afeta E em cima.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Considere uma economia Emergente e um Resto do Mundo. A condição de paridade com prêmio de risco é: <em>R = R* + ρ + (E<sup>e</sup>−E)/E</em>. A economia está em equilíbrio de longo prazo. Uma grave crise política eleva exogenamente e temporariamente o prêmio de risco ρ. No curto prazo, produto, preços e oferta de moeda permanecem inalterados.</p>
+<p>a) Com o Banco Central passivo (não altera oferta de moeda): utilize o gráfico duplo para explicar o novo equilíbrio de curto prazo. O que acontece com R e com E?</p>
+<p>b) Considere que o BC deseja impedir que E se altere. Qual política monetária deve adotar? Como isso afeta o painel do mercado monetário e qual é o custo em termos da taxa de juros?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 2, Q5</span>
+<button class="rb" data-gab="gab-09">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-10">
+<div class="ex-hd"><span class="ex-num">Exercício 10</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-10')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-10">
+<dl><dt>PDJ (Paridade Descoberta de Juros)</dt><dd>R$ = R* + (E<sup>e</sup>−E)/E. Equilíbrio sem travamento cambial. Carry trade lucra se diferencial &gt; 0 e câmbio não se move conforme a paridade prevê.</dd>
+<dt>Carry trade</dt><dd>Toma empréstimo em moeda de baixo juro (funding currency), investe em moeda de alto juro (target currency). Lucra com diferencial, corre risco cambial.</dd>
+<dt>Conta financeira (FA)</dt><dd>Fluxos de capital (investimentos em carteira, IED). Carry trade aparece como investimento em carteira.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Em agosto de 2024, investidores começaram a desfazer operações de carry trade em iene japonês (empréstimos em JPY a juros baixos para investir em ativos de alto rendimento como o real brasileiro). O Banco do Japão havia elevado inesperadamente sua taxa básica para 0,25% a.a., enquanto a taxa Selic no Brasil estava em 10,50% a.a.</p>
+<p>a) O que é carry trade? Descreva a estratégia com termos econômicos precisos.</p>
+<p>b) Qual a expressão analítica (fórmula) que o investidor usa para decidir realizar ou não a operação de carry trade?</p>
+<p>c) Quais são os riscos envolvidos no carry trade?</p>
+<p>d) Qual foi o "maior carry trade que o mundo já viu" e o que o propiciou?</p>
+<p>e) Como a alta de juros do BoJ afetou as operações e quais as consequências para o real e as ações brasileiras? Descreva a mecânica (quais ativos foram comprados/vendidos).</p>
+<p>f) Como essas operações aparecem nas contas do BdP do Brasil? O que o BCB poderia fazer para reduzir os efeitos sobre o real?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 1, Q10</span>
+<button class="rb" data-gab="gab-10">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-11">
+<div class="ex-hd"><span class="ex-num">Exercício 11</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-11')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-11">
+<dl><dt>PDJ aplicada ao Brasil</dt><dd>R_SELIC = R_FED + (E<sup>e</sup>_R$/USD − E_R$/USD)/E_R$/USD. Dólar sobe quando diferencial de juros cai (SELIC baixa ou FED sobe).</dd>
+<dt>Taxa forward</dt><dd>Taxa contratada hoje para troca de moeda em data futura. Por CIP: F/E = (1+R_dom)/(1+R_ext).</dd></dl>
+</div>
+<div class="ex-body">
+<p>Seus tios vão aos EUA em dezembro de 2025 e têm as seguintes informações: taxa Selic = 13,25% a.a. (tendência: alta até 15%); Fed Funds = 4,50% a.a. (tendência: queda para 4%); câmbio spot = R$5,71/US$; câmbio futuro na B3 para dez/2025 = R$6,13/US$.</p>
+<p>a) Apresente o gráfico que descreve o equilíbrio no mercado de câmbio real/dólar e liste as variáveis exógenas que afetam a taxa de câmbio de equilíbrio.</p>
+<p>b) Dado o diferencial de juros projetado (Selic↑, Fed↓), o que deve ocorrer com a taxa de câmbio R$/US$? Qual estratégia cambial você sugeriria a seus tios?</p>
+<p>c) Seu tio propõe: "com Selic em 13,25% e dólar futuro em R$6,13, o melhor é manter em reais e comprar dólares na hora da viagem". Você concorda com essa estratégia? Justifique com base na PDJ.</p>
+<p>d) Sua tia pergunta por que o câmbio foi R$1,70 em 2008 e hoje está em R$5,70. O que responder?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 1, Q7</span>
+<button class="rb" data-gab="gab-11">&#8595; Ver gabarito desta questão</button></div>
+</div>
+</section>
+<!-- ==================== TÓPICO 3: CAP 15 ==================== -->
+<section class="sec" id="t3">
+<h2>Tópico 3 — Cap. 15: Mercado Monetário, Choques e Overshooting <span class="badge b-pr">PRIORITÁRIO</span></h2>
+<div class="db"><strong>&#128680; ALTÍSSIMA PRIORIDADE:</strong> Este tópico aparece em 100% das provas intermediárias. O gráfico duplo é obrigatório em todas as análises de política monetária.</div>
+
+<h3>&#128161; Explicação simplificada</h3>
+<p>O mercado monetário é como um sistema de balanço: de um lado, a oferta de moeda (M<sup>s</sup>/P = oferta real); do outro, a demanda por moeda (L(Y,R) = quanto as pessoas querem ter de dinheiro no bolso). O equilíbrio determina a taxa de juros R. Essa taxa de juros, por sua vez, determina a taxa de câmbio E via PDJ.</p>
+<p>O <strong>gráfico duplo</strong> do professor conecta esses dois mercados: o de baixo (monetário) determina R, que alimenta o de cima (câmbio), que determina E. Quando o BC aumenta M<sup>s</sup>, R cai no curto prazo, e E sobe (dólar deprecia).</p>
+<p>O <strong>overshooting de Dornbusch</strong> é o fenômeno em que o câmbio ultrapassa o equilíbrio de longo prazo no curto prazo (com preços rígidos), porque a taxa de juros cai demais. Depois, à medida que os preços sobem, a economia converge gradualmente para o equilíbrio de longo prazo e o câmbio aprecia de volta.</p>
+
+<div class="cb">
+<strong>Equilíbrio no mercado monetário:</strong>
+<div class="fb" style="margin:0.8em 0">
+<span class="fl">Oferta real = Demanda por moeda:</span>
+<span class="fr"><span class="frac"><span class="num">M<sup>s</sup></span><span class="den">P</span></span> = L(Y, R)</span>
+<span class="fs" style="font-size:.88em">→ A variável de ajuste no curto prazo é R. No longo prazo é P.</span>
+<span class="fs"><span class="fr">P =
+<span class="frac"><span class="num">M<sup>s</sup></span><span class="den">L(Y, R)</span></span></span> &nbsp;&nbsp;(sublinhado pelo professor)</span>
+</div>
+</div>
+
+<h3>Gráfico Duplo — Câmbio + Mercado Monetário</h3>
+<div class="svg-w">
+<figure>
+<svg width="480" height="480" viewBox="0 0 480 480" style="max-width:100%;font-family:Georgia,serif;font-size:12px">
+<defs><marker id="ah2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#333"/></marker></defs>
+
+<!-- SHARED X AXIS in middle -->
+<line x1="60" y1="240" x2="430" y2="240" stroke="#333" stroke-width="2" marker-end="url(#ah2)"/>
+<text x="435" y="244" font-size="12" fill="#333" font-weight="bold">R$</text>
+<text x="200" y="258" font-size="11" fill="#555">(taxa de juros em dólar)</text>
+
+<!-- R0 tick on shared axis -->
+<line x1="240" y1="235" x2="240" y2="245" stroke="#333" stroke-width="2"/>
+<text x="232" y="268" font-size="11" fill="#333">R$&#8320;</text>
+
+<!-- TOP HALF: FX market -->
+<line x1="60" y1="240" x2="60" y2="20" stroke="#333" stroke-width="1.5" marker-end="url(#ah2)"/>
+<text x="10" y="18" font-size="11" fill="#333">E&#x24;/&#x20AC;</text>
+<text x="90" y="30" font-size="11" fill="#1a3a8f">Mercado de Câmbio</text>
+
+<!-- FX curve (downward in top half: as R increases, E decreases) -->
+<path d="M 90,55 Q 200,140 380,215" stroke="#1a3a8f" stroke-width="2.5" fill="none"/>
+<text x="140" y="85" font-size="10" fill="#1a3a8f" transform="rotate(-28,140,85)">R€+(E&#7497;&#8722;E)/E</text>
+
+<!-- FX vertical domestic return -->
+<line x1="240" y1="50" x2="240" y2="240" stroke="#c62828" stroke-width="1.8" stroke-dasharray="5,4"/>
+<text x="246" y="60" font-size="10" fill="#c62828">R$&#8320;</text>
+
+<!-- Equilibrium point FX -->
+<circle cx="240" cy="157" r="5" fill="#1b5e20"/>
+<line x1="60" y1="157" x2="240" y2="157" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="25" y="161" font-size="11" fill="#1b5e20">E&#8320;</text>
+
+<!-- Arrow linking the two panels -->
+<line x1="242" y1="245" x2="242" y2="265" stroke="#888" stroke-width="1.5" marker-end="url(#ah2)"/>
+<line x1="242" y1="265" x2="242" y2="350" stroke="#888" stroke-width="1.5"/>
+<text x="248" y="280" font-size="10" fill="#888" font-style="italic">determina</text>
+<line x1="242" y1="350" x2="242" y2="370" stroke="#888" stroke-width="1.5" marker-end="url(#ah2)"/>
+
+<!-- BOTTOM HALF: Money market (Y axis inverted: M/P increases downward) -->
+<line x1="60" y1="240" x2="60" y2="460" stroke="#333" stroke-width="1.5" marker-end="url(#ah2)"/>
+<text x="5" y="458" font-size="11" fill="#333">M&#x2020;/P</text>
+<text x="63" y="455" font-size="10" fill="#555">&#8593; cresce para baixo</text>
+<text x="90" y="260" font-size="11" fill="#2e7d32">Mercado Monetário</text>
+
+<!-- Money demand L(Y,R) downward in this panel means going right-down -->
+<path d="M 90,270 Q 200,350 370,430" stroke="#2e7d32" stroke-width="2.5" fill="none"/>
+<text x="300" y="430" font-size="10" fill="#2e7d32">L(Y, R$)</text>
+
+<!-- Money supply (vertical) -->
+<line x1="240" y1="240" x2="240" y2="460" stroke="#e65100" stroke-width="2" stroke-dasharray="5,4"/>
+<text x="246" y="360" font-size="10" fill="#e65100">M&#x2020;/P&#8320;</text>
+
+<!-- Equilibrium money market -->
+<circle cx="240" cy="370" r="5" fill="#1b5e20"/>
+</svg>
+<figcaption>Gráfico duplo do professor. Leia de baixo para cima: M<sup>s</sup>/P determina R$ (mercado monetário) → R$ determina E (mercado de câmbio). Ambos compartilham o eixo horizontal R$.</figcaption>
+</figure>
+</div>
+
+<h3>Cadeia causal — Overshooting de Dornbusch (permanente M<sup>s</sup>↑, preços rígidos no CP)</h3>
+<div class="cb">
+<p><strong>Curto prazo (preços fixos):</strong></p>
+<ul>
+<li>M<sup>s</sup>↑ → M<sup>s</sup>/P↑ → excesso de oferta de moeda → R$ cai → dólar deprecia → E↑</li>
+<li>Ao mesmo tempo: E<sup>e</sup>↑ (expectativa sobe proporcionalmente) → curva de retorno do euro desloca para cima → E sobe ainda mais</li>
+<li>Resultado: <strong>E<sub>CP</sub> &gt; E<sub>LP</sub></strong> (overshooting — o câmbio vai além do equilíbrio de longo prazo)</li>
+</ul>
+<p><strong>Longo prazo (preços flexíveis):</strong></p>
+<ul>
+<li>P↑ (preços sobem para absorver o excesso de moeda) → M<sup>s</sup>/P volta ao nível original → R$ volta ao original</li>
+<li>E aprecia de E<sub>CP</sub> de volta para E<sub>LP</sub> (mas ainda acima de E₀)</li>
+</ul>
+</div>
+
+<h3>Exercícios</h3>
+
+<div class="ex" id="ex-12">
+<div class="ex-hd"><span class="ex-num">Exercício 12</span><span class="badge b-f">FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-12')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-12">
+<dl><dt>Estabilidade do equilíbrio monetário</dt><dd>Se R &gt; R_eq → excesso de oferta de moeda → R cai voltando ao equilíbrio. Se R &lt; R_eq → excesso de demanda → R sobe. É estável.</dd>
+<dt>Choque de produtividade</dt><dd>Y↑ → L(Y,R)↑ → demanda por moeda sobe → R↑ (se M<sup>s</sup> constante). BC pode aumentar M<sup>s</sup> para evitar alta de R.</dd></dl>
+</div>
+<div class="ex-body">
+<p>a) O equilíbrio no mercado monetário, tal como apresentado no livro, é estável? Justifique.</p>
+<p>b) Suponha que o país tenha um choque de produtividade que impacta positivamente na renda real. No curto prazo, o nível de preços permanece inalterado. Como o Banco Central atuaria para evitar efeitos imediatos sobre a taxa de juros? Justifique detalhadamente sua resposta.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 2, Q1</span>
+<button class="rb" data-gab="gab-12">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-13">
+<div class="ex-hd"><span class="ex-num">Exercício 13</span><span class="badge b-mf">MÉDIO-FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-13')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-13">
+<dl><dt>Choque temporário vs permanente</dt><dd>Temporário: sem efeito no longo prazo. Permanente: muda E<sup>e</sup> (expectativa) → efeito duplo no CP + novo equilíbrio no LP.</dd>
+<dt>Demanda por moeda (L)</dt><dd>L = L(Y, R): cresce com Y, decresce com R. Choque exógeno negativo em L → excesso de oferta de moeda → R cai → E sobe.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Suponha uma redução completamente exógena na demanda agregada por moeda real (deslocamento negativo na função L) — analise tanto o caso <strong>temporário</strong> quanto o caso <strong>permanente</strong>. Trace os efeitos de curto e longo prazo sobre a taxa de câmbio, a taxa de juros e o nível de preços. Use as cadeias causais com setas (como o professor faz nas anotações).</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 2, Q2 (KOM 13ª ed.)</span>
+<button class="rb" data-gab="gab-13">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-14">
+<div class="ex-hd"><span class="ex-num">Exercício 14</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-14')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-14">
+<dl><dt>Overshooting</dt><dd>E<sub>CP</sub> &gt; E<sub>LP</sub>: no curto prazo o câmbio deprecia além do necessário. Ocorre quando preços são rígidos mas o câmbio não é.</dd>
+<dt>Passagem cambial (pass-through)</dt><dd>Parte do índice de preços P depende de E (bens importados). Se α &gt; 0, uma depreciação sobe P no CP, reduzindo parcialmente o efeito na M<sup>s</sup>/P.</dd></dl>
+</div>
+<div class="ex-body">
+<p>O Banco Central aumenta a oferta de moeda de forma permanente. Considere que o índice de preços ao consumidor (P) depende tanto dos preços domésticos (P<sub>d</sub>) quanto dos preços externos em moeda doméstica:</p>
+<p style="text-align:center"><em>P = α · P<sub>d</sub> + (1 − α) · E · P<sub>ext</sub></em></p>
+<p>No curto prazo, P<sub>d</sub> e P<sub>ext</sub> são fixos. O BC pode optar por aumento <strong>gradual</strong> ou <strong>tempestivo</strong> (de uma vez) da oferta de moeda.</p>
+<p>b) Discuta os prós e contras de cada cenário, considerando os impactos no mercado cambial e no índice de preços (P) no curto prazo. Qual estratégia escolheria se seu horizonte fosse apenas o curto prazo?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: PI 2023.2, Q1b</span>
+<button class="rb" data-gab="gab-14">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-15">
+<div class="ex-hd"><span class="ex-num">Exercício 15</span><span class="badge b-md">MÉDIO-DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-15')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-15">
+<dl><dt>Produto endógeno no CP</dt><dd>Se M<sup>s</sup>↑ → R↓ → I↑ → Y↑ → L(Y,R)↑ → R↑ parcialmente. Este efeito atenua a queda de R e, portanto, atenua o overshooting.</dd>
+<dt>Undershooting</dt><dd>E<sub>CP</sub> &lt; E<sub>LP</sub>: câmbio deprecia menos do que o necessário no longo prazo. Exige demanda por moeda muito elástica ao Y.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Em nossa discussão sobre o overshooting da taxa de câmbio no curto prazo, assumimos que o produto real era dado (exógeno). Suponha, em vez disso, que um aumento na oferta de moeda <strong>eleve o produto real no curto prazo</strong>.</p>
+<p>a) Como isso afeta a extensão em que a taxa de câmbio sofre overshooting quando a oferta de moeda aumenta inicialmente?</p>
+<p>b) É provável que a taxa de câmbio sofra undershooting? Que hipóteses precisariam ser mudadas para observar undershooting?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 2, Q3 (KOM 13ª ed.)</span>
+<button class="rb" data-gab="gab-15">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-16">
+<div class="ex-hd"><span class="ex-num">Exercício 16</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-16')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-16">
+<dl><dt>Contração monetária permanente</dt><dd>M<sup>s</sup>↓ → M<sup>s</sup>/P↓ → excesso de demanda → R↑ → E↓ (apreciação) no CP. No LP: P↓ → M<sup>s</sup>/P volta ao original → R volta ao original → E<sub>LP</sub> &lt; E₀.</dd>
+<dt>Política fiscal vs monetária</dt><dd>PF (G↑) → Y↑ via demanda → pressão de R↑ (mais demanda por crédito). PM (M<sup>s</sup>↓) → R↑ via oferta monetária. Os efeitos se interagem.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Considere a economia doméstica com as seguintes relações: Y = C(Y) + I(R) + G + X − M; M<sup>s</sup>/P = L(R, Y); R = R* + (E<sup>e</sup>−E)/E. Partindo de equilíbrio, com rigidez de preços no curto prazo, o Banco Central promove uma <strong>redução permanente</strong> da oferta de moeda.</p>
+<p>a) Utilizando o gráfico duplo apresentado em sala de aula, explique claramente o novo equilíbrio de curto prazo e a transição do curto para o longo prazo. Compare detalhadamente os equilíbrios de CP e LP da taxa de juros e do câmbio nominal. A intuição econômica tem que aparecer claramente.</p>
+<p>b) O que mudaria se a política fiscal fosse na contramão da política monetária na atividade? Qual seria o impacto sobre R e E no CP e LP? De que dependeria?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: PI 2025.1, Q1</span>
+<button class="rb" data-gab="gab-16">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-17">
+<div class="ex-hd"><span class="ex-num">Exercício 17</span><span class="badge b-p">PESADO</span>
+<button class="gbtn" onclick="toggleG('ex-17')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-17">
+<dl><dt>Efeito Fisher</dt><dd>g<sup>m</sup>↑ → π<sup>e</sup>↑ → R↑ → P↑. O professor sublinha "efeito Fisher" nas anotações. No LP, R reflete a inflação esperada.</dd>
+<dt>Choque de produtividade (mundo)</dt><dd>Y<sub>D</sub>↑ → L(Y,R)↑ → R<sub>D</sub>↑ → E cai (apreciação no CP). No LP: P<sub>D</sub>↓ → M<sup>s</sup>/P↑ → R<sub>D</sub>↓ → E sobe (depreciação parcial de volta).</dd></dl>
+</div>
+<div class="ex-body">
+<p>Considere um mundo dividido em Doméstico (D) e Resto do Mundo (RM). Partindo de equilíbrio, o país Doméstico apresenta um choque positivo <strong>permanente</strong> em sua produtividade.</p>
+<p>a) O que acontecerá com a taxa de câmbio E (dólares por euro)? Analise o CP (preços fixos) e o LP (preços flexíveis).</p>
+<p>b) O Resto do Mundo decide implementar uma política monetária destinada a anular qualquer mudança de longo prazo na taxa de câmbio. Qual seria essa política? O que aconteceria no CP e LP?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 2, Q4 (PI 2025.2 Q3 — adaptado)</span>
+<button class="rb" data-gab="gab-17">&#8595; Ver gabarito desta questão</button></div>
+</div>
+</section>
+<!-- ==================== TÓPICO 4: CAP 16 ==================== -->
+<section class="sec" id="t4">
+<h2>Tópico 4 — Cap. 16: PPC, Taxa de Câmbio Real e Modelo de Longo Prazo <span class="badge b-pr">PRIORITÁRIO</span></h2>
+
+<h3>&#128161; Explicação simplificada</h3>
+<p>No <strong>curto prazo</strong> (cap. 15), os preços são fixos e a taxa de câmbio flutua para equilibrar o mercado de ativos. No <strong>longo prazo</strong> (cap. 16), os preços se ajustam e a taxa de câmbio reflete fundamentalmente duas coisas: (1) a política monetária de cada país e (2) choques reais (preferências, produtividade).</p>
+<p>A <span class="term">PPC<span class="tt">Paridade do Poder de Compra (PPP em inglês / PPC em português). Diz que o mesmo bem deve custar o mesmo em todos os países quando expresso na mesma moeda. Fundamento: Lei do Preço Único (LPU).</span></span> é a ideia de que, no longo prazo, as taxas de câmbio devem refletir os níveis de preços relativos. O professor risca as formas simples de PPC nas anotações para mostrar que são casos especiais do modelo geral.</p>
+
+<div class="cb">
+<strong>Fórmulas centrais do Cap. 16:</strong>
+<div class="fb" style="margin:0.8em 0">
+<span class="fl">Taxa de câmbio real (o professor usa "q" E "EP*/P" — são a mesma coisa):</span>
+<span class="fr">q = <span class="frac"><span class="num">E · P*</span><span class="den">P</span></span></span>
+<span class="fs">q ↑ = depreciação real &nbsp;|&nbsp; q ↓ = apreciação real</span>
+</div>
+<div class="fb" style="margin:0.8em 0">
+<span class="fl">Modelo geral de longo prazo (sublinhado em vermelho pelo professor):</span>
+<span class="fr">E<sub>$/€</sub> = <span class="frac"><span class="num">M<sup>s</sup><sub>US</sub></span><span class="den">M<sup>s</sup><sub>EU</sub></span></span> · <span class="frac"><span class="num">L(Y<sub>EU</sub>, R<sub>EU</sub>)</span><span class="den">L(Y<sub>US</sub>, R<sub>US</sub>)</span></span></span>
+<span class="fs" style="font-size:.85em;color:#777"><em>= razão das ofertas de moeda × razão das demandas. E depende de M<sup>s</sup>, Y e R dos dois países.</em></span>
+</div>
+<div class="fb" style="margin:0.8em 0">
+<span class="fl">Fórmula geral (fatores monetários + reais):</span>
+<span class="fr">E<sub>$/€</sub> = q<sub>$/€</sub> · <span class="frac"><span class="num">P<sub>US</sub></span><span class="den">P<sub>EU</sub></span></span></span>
+<span class="fs" style="font-size:.85em">PPC absoluta = caso especial quando q = constante</span>
+</div>
+</div>
+
+<div class="warn">
+<strong>PPC absoluta <span style="color:#c62828">[RISCADA pelo professor]:</span></strong> E<sub>$/€</sub> = P<sub>US</sub>/P<sub>EU</sub> &nbsp;→&nbsp; só vale com q constante<br>
+<strong>PPC relativa <span style="color:#c62828">[RISCADA pelo professor]:</span></strong> Δ%E = π<sub>US</sub> − π<sub>EU</sub> &nbsp;→&nbsp; só válida se q for constante ao longo do tempo
+</div>
+
+<h3>Exercícios</h3>
+
+<div class="ex" id="ex-18">
+<div class="ex-hd"><span class="ex-num">Exercício 18</span><span class="badge b-f">FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-18')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-18">
+<dl><dt>PPC relativa</dt><dd>Δ%E = π<sub>dom</sub> − π<sub>ext</sub>. Se a Rússia tem inflação 100% e Suíça 15%, o rublo deve depreciar 85% contra o franco em 1 ano.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Suponha que a taxa de inflação na Rússia seja de 100% ao ano, enquanto a taxa de inflação na Suíça seja de apenas 15% ao ano. De acordo com a <span class="term">PPC relativa<span class="tt">Δ%E = π_dom − π_ext. O câmbio de depreciação compensa o diferencial de inflação para manter o poder de compra relativo.</span></span>, o que deve acontecer ao longo do ano com a taxa de câmbio do franco suíço em relação ao rublo russo?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 3, Q1</span>
+<button class="rb" data-gab="gab-18">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-19">
+<div class="ex-hd"><span class="ex-num">Exercício 19</span><span class="badge b-mf">MÉDIO-FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-19')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-19">
+<dl><dt>PPC absoluta vs relativa</dt><dd>Absoluta: E = P/P*. Relativa: Δ%E = π − π*. Absoluta implica relativa, mas relativa NÃO implica absoluta (poderia haver nível constante diferente de 1).</dd>
+<dt>Pricing to market (PTM)</dt><dd>Empresas em concorrência imperfeita diferenciam preços por mercado. Viola LPU — a mesma empresa cobra preços diferentes em países diferentes.</dd>
+<dt>Nontradables</dt><dd>Bens não comercializáveis internacionalmente (corte de cabelo, aluguel). Seus preços não são arbitrados pela LPU → permitem desvios sistemáticos da PPC.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Assinale <strong>V</strong> (Verdadeiro) ou <strong>F</strong> (Falso) e justifique cada item:</p>
+<div class="sub">
+<p>1) Se vale a PPC relativa, então vale a PPC absoluta.</p>
+<p>2) A validade da PPC absoluta requer a validade da <span class="term">LOP<span class="tt">Law of One Price / Lei do Preço Único (LPU): o mesmo bem deve custar o mesmo em todos os países quando expresso na mesma moeda. Pré-requisito para PPC absoluta.</span></span> para todos os bens.</p>
+<p>3) Bens não comercializáveis internacionalmente (<em>nontradables</em>) permitem desvios sistemáticos da PPC.</p>
+<p>4) O modelo de <em>pricing-to-market</em> por empresas em concorrência imperfeita fortalece os mecanismos da LPU, pois as empresas ajustam seus preços imediatamente às variações cambiais.</p>
+</div>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 3, Q2</span>
+<button class="rb" data-gab="gab-19">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-20">
+<div class="ex-hd"><span class="ex-num">Exercício 20</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-20')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-20">
+<dl><dt>Taxa de câmbio real (q)</dt><dd>q = EP*/P. Mede a competitividade relativa. q↑ = depreciação real = bens domésticos mais baratos relativamente.</dd>
+<dt>Nontradables e q</dt><dd>Se demanda sobe por bens domésticos (nontradables), preço relativo doméstico sobe → q↓ (apreciação real). Efeito Balassa-Samuelson.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Mantidas as demais condições, como você esperaria que as seguintes mudanças afetassem a <strong>taxa de câmbio real</strong> de uma moeda em relação às moedas estrangeiras:</p>
+<p>a) O nível geral de gastos não se altera, mas os residentes domésticos decidem gastar mais de sua renda em produtos <em>não comercializáveis</em> (nontradables) e menos em bens comercializáveis (tradables).</p>
+<p>b) Brasileiros vivendo no exterior decidem consumir mais produtos de seu país de origem.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 3, Q3 (KOM 13ª ed. — adaptado)</span>
+<button class="rb" data-gab="gab-20">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-21">
+<div class="ex-hd"><span class="ex-num">Exercício 21</span><span class="badge b-md">MÉDIO-DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-21')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-21">
+<dl><dt>Abordagem monetária</dt><dd>No LP com PPC: E = (M<sup>s</sup>/M<sup>s</sup>*) · (L*/L). Mudanças em M, Y ou R de qualquer país afetam E via P. Sem impacto real = sem impacto em q.</dd>
+<dt>Efeito Fisher</dt><dd>g<sup>m</sup>↑ → π<sup>e</sup>↑ → R↑ (taxa nominal sobe para compensar inflação esperada) → L(Y,R)↓ → P↑ → E↑. Cadeia: crescimento monetário → câmbio.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Explique como mudanças <strong>permanentes</strong> nas funções de demanda por moeda real nacional afetam as taxas de câmbio real e nominal no longo prazo. Considere especificamente o caso em que a mudança decorre de uma queda permanente na demanda por moeda doméstica L(Y,R), por razões não associadas a Y ou R (choque autônomo). Como o câmbio real e o nominal se ajustam? Por que?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 3, Q4</span>
+<button class="rb" data-gab="gab-21">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-22">
+<div class="ex-hd"><span class="ex-num">Exercício 22</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-22')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-22">
+<dl><dt>PPC absoluta — evidência empírica</dt><dd>Figura 1 do paper T&amp;T: taxa de câmbio nominal vs. nível de preços relativo. Se PPC absoluta valesse, todos os pontos estariam numa reta de 45°. Desvios persistentes → lei do preço único não se verifica no curto prazo.</dd>
+<dt>PPC relativa — evidência empírica</dt><dd>Figura 2 do paper T&amp;T: correlação entre variações cambiais e diferenciais de inflação. Alta correlação no longo prazo (décadas), fraca no curto prazo. Suporte parcial à PPC relativa.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Em aula foi discutido o artigo <em>"The Purchasing Power Parity Debate"</em>, de Alan M. Taylor e Mark P. Taylor (JEP, 2004). Explique claramente os resultados vinculados à <strong>PPC Absoluta</strong> e à <strong>PPC Relativa</strong>. Sua resposta deve incluir: (1) descrição dos resultados do paper, (2) análise completa das implicações para a verificação da PPC correspondente, e (3) a intuição econômica. Fique atento à diferença entre curto e longo prazo.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: PI 2024.1, Q2</span>
+<button class="rb" data-gab="gab-22">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-23">
+<div class="ex-hd"><span class="ex-num">Exercício 23</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-23')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-23">
+<dl><dt>Transferência internacional</dt><dd>Transferência de poder de compra entre países. Pode melhorar ou piorar os termos de troca do país que paga (debate Keynes-Ohlin).</dd>
+<dt>Termos de troca</dt><dd>Preço dos bens exportados / preço dos bens importados. Piora se o país paga e seus bens ficam mais baratos (surplus de oferta no mercado doméstico → q↑).</dd></dl>
+</div>
+<div class="ex-body">
+<p>O Tratado de Versalhes (1919) impôs indenizações à Alemanha. Keynes e Ohlin debateram se o pagamento impunha um "fardo secundário" via piora dos termos de troca. Use a teoria do Cap. 16 para discutir os mecanismos pelos quais uma transferência permanente da <strong>Polônia para a República Tcheca</strong> afetaria a taxa de câmbio real e nominal do zloty (PLN) por coruna (CZK) no longo prazo.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 3, Q5 (KOM 13ª ed.)</span>
+<button class="rb" data-gab="gab-23">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-24">
+<div class="ex-hd"><span class="ex-num">Exercício 24</span><span class="badge b-p">PESADO</span>
+<button class="gbtn" onclick="toggleG('ex-24')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-24">
+<dl><dt>Choque de demanda (relativo)</dt><dd>RD<sub>A/B</sub> desloca: se demanda por produtos de A cai relativamente → RD desce → q de A sobe (depreciação real).</dd>
+<dt>Choque de oferta (relativo)</dt><dd>RS<sub>A/B</sub> desloca: se oferta de A sobe → RS desloca → q de A cai (apreciação real, bens de A ficam mais baratos).</dd>
+<dt>Competitividade via câmbio real</dt><dd>Para ser "mais competitivo" = q↑ (bens mais baratos em termos relativos). Mas q é determinado pelo equilíbrio, não por decreto.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Considere um mundo dividido em países A e B. O presidente de A eleva significativamente as tarifas sobre bens importados de B (o "Tarifaço"). Use o modelo geral de determinação das taxas de câmbio no longo prazo. "Ser mais competitivo" = ser mais barato em termos relativos (q maior).</p>
+<p>a) Pense no Tarifaço como um <strong>choque de demanda</strong>. Qual argumento justifica isso? Qual o impacto sobre as taxas de câmbio nominal e real de A no longo prazo? Use gráficos e explique a intuição econômica.</p>
+<p>b) Pense no Tarifaço como um <strong>choque de oferta</strong>. Qual argumento justifica isso? Qual o impacto sobre as taxas de câmbio nominal e real de A? Use gráficos e explique a intuição.</p>
+<p>c) Na realidade, o Tarifaço tem características de ambos os choques. Seria possível identificar o efeito líquido sobre q? O presidente de A estaria efetivamente melhorando a competitividade de seu país?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 3, Q6 (PI 2025.2 Q2 — questões idênticas)</span>
+<button class="rb" data-gab="gab-24">&#8595; Ver gabarito desta questão</button></div>
+</div>
+</section>
+
+<!-- ==================== TÓPICO 5: CAP 17 ==================== -->
+<section class="sec" id="t5">
+<h2>Tópico 5 — Cap. 17: Modelo DD-AA — Produto e Câmbio no Curto Prazo <span class="badge b-pr">PRIORITÁRIO</span></h2>
+
+<h3>&#128161; Explicação simplificada</h3>
+<p>O modelo DD-AA é a "grande síntese" do curso: une o mercado de bens (curva DD) com o mercado de ativos — monetário + câmbio (curva AA) — para determinar simultaneamente o produto (Y) e o câmbio (E).</p>
+<p>A curva DD mostra todas as combinações (Y, E) que equilibram o mercado de bens: quando E sobe (dólar deprecia), as exportações líquidas melhoram e Y sobe. A curva AA mostra todas as combinações (Y, E) que equilibram os mercados de ativos: quando Y sobe, a demanda por moeda sobe, R sobe, e E cai.</p>
+
+<div class="db">
+<strong>&#9888; O professor destaca nas anotações:</strong> CA = Qx(q) − q·Qm(q) &nbsp;<strong>≠</strong>&nbsp; Qx − Qm &nbsp;&nbsp;"NÃO!"<br>
+A segunda parte (q·Qm) captura o efeito valor: a mesma quantidade de importações custa mais em moeda doméstica quando q sobe. Por isso a <strong>condição Marshall-Lerner</strong> é necessária: efeito volume &gt; efeito valor.
+</div>
+
+<div class="cb">
+<strong>Demanda Agregada Aberta (fórmula central do Cap. 17):</strong>
+<div class="fb" style="margin:0.8em 0">
+<span class="fl">Demanda agregada (o prof. usa EP*/P para taxa de câmbio real):</span>
+<span class="fr">D = C(Y−T) + I + G + <span class="term">CA<span class="tt">CA = Qx(q) − q·Qm(q) onde q = EP*/P. Sinal positivo com q: depreciação real melhora CA (pela condição Marshall-Lerner).</span></span>(EP*/P, Y−T, Y*−T*)</span>
+<span class="fs" style="font-size:.85em">Sinais: CA(+, −, +) &nbsp; → q↑ melhora CA; Y↑ piora CA; Y*↑ melhora CA</span>
+</div>
+</div>
+
+<h3>Gráfico DD-AA</h3>
+<div class="svg-w">
+<figure>
+<svg width="420" height="350" viewBox="0 0 420 350" style="max-width:100%;font-family:Georgia,serif;font-size:12px">
+<defs><marker id="ah3" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#333"/></marker></defs>
+<line x1="60" y1="310" x2="390" y2="310" stroke="#333" stroke-width="1.5" marker-end="url(#ah3)"/>
+<line x1="60" y1="310" x2="60" y2="20" stroke="#333" stroke-width="1.5" marker-end="url(#ah3)"/>
+<text x="395" y="314" font-size="12">Y</text>
+<text x="30" y="18" font-size="12">E</text>
+<!-- DD curve (negative slope) -->
+<line x1="90" y1="80" x2="360" y2="280" stroke="#1a3a8f" stroke-width="2.5"/>
+<text x="365" y="285" font-size="12" fill="#1a3a8f">DD</text>
+<!-- AA curve (positive slope) -->
+<line x1="90" y1="280" x2="360" y2="80" stroke="#c62828" stroke-width="2.5"/>
+<text x="365" y="80" font-size="12" fill="#c62828">AA</text>
+<!-- equilibrium -->
+<circle cx="225" cy="180" r="6" fill="#1b5e20"/>
+<line x1="60" y1="180" x2="225" y2="180" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="225" y1="180" x2="225" y2="310" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="30" y="184" font-size="11" fill="#1b5e20">E&#8320;</text>
+<text x="218" y="325" font-size="11" fill="#1b5e20">Y&#8320;</text>
+<!-- interpretations -->
+<text x="90" y="330" font-size="10" fill="#1a3a8f">DD: E↑ → CA↑ → Y↑ (mercado de bens)</text>
+<text x="90" y="345" font-size="10" fill="#c62828">AA: Y↑ → R↑ → E↓ (mercados de ativos)</text>
+</svg>
+<figcaption>DD é negativamente inclinada (E↑ melhora CA → Y↑). AA é positivamente inclinada (Y↑ → L↑ → R↑ → E↓).</figcaption>
+</figure>
+</div>
+
+<h3>Exercícios</h3>
+
+<div class="ex" id="ex-25">
+<div class="ex-hd"><span class="ex-num">Exercício 25</span><span class="badge b-mf">MÉDIO-FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-25')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-25">
+<dl><dt>Curva DD</dt><dd>Deslocada para direita por: G↑, T↓, Y*↑, q↑ (permanente), preferências por domésticos↑. Inclinada negativamente: E↑ → q↑ → CA↑ → Y↑.</dd>
+<dt>Overshooting no DD-AA</dt><dd>Em políticas permanentes: AA desloca imediatamente (expectativas mudam E<sup>e</sup>), mas DD leva tempo (CA responde com lag). Resultado: E pode ultrapassar o LP antes de convergir.</dd></dl>
+</div>
+<div class="ex-body">
+<p>a) Analise o seguinte choque sobre a curva DD: notícias sobre "doença da vaca louca" no exterior fazem com que residentes de um país tenham medo de comprar carne importada. Faça a representação gráfica do mercado de bens (D × Y) e mostre o efeito na curva DD.</p>
+<p>b) Releia a seção sobre "Ajuste a um aumento permanente da oferta de moeda" (Fig. 17-15 do KOM). Você concorda que esse é um caso de overshooting? Poderia haver undershooting neste ajuste? Quais hipóteses precisariam mudar para observar undershooting?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 4, Q1</span>
+<button class="rb" data-gab="gab-25">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-26">
+<div class="ex-hd"><span class="ex-num">Exercício 26</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-26')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-26">
+<dl><dt>Tarifa sobre importações</dt><dd>Eleva custo de importados → CA melhora → DD desloca para direita. Se permanente: E<sup>e</sup> muda? E afeta AA também via expectativas cambiais.</dd>
+<dt>Temporário vs permanente</dt><dd>Temporário: só DD desloca. Permanente: DD e AA deslocam (expectativas de câmbio se ajustam ao novo LP).</dd></dl>
+</div>
+<div class="ex-body">
+<p>Suponha que o governo imponha uma tarifa sobre <strong>todas</strong> as importações. Use o modelo DD-AA para analisar os efeitos sobre a economia. Analise tanto o caso de tarifas <strong>temporárias</strong> quanto <strong>permanentes</strong>. O que ocorre com Y, E e a conta corrente em cada caso?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 4, Q2 (KOM Cap.17, Q2)</span>
+<button class="rb" data-gab="gab-26">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-27">
+<div class="ex-hd"><span class="ex-num">Exercício 27</span><span class="badge b-md">MÉDIO-DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-27')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-27">
+<dl><dt>Lei do orçamento equilibrado (ΔG = ΔT)</dt><dd>Toda alta de G é compensada por alta igual de T. Efeito: ΔC = −cΔT, logo ΔDDA = ΔG − cΔT = (1−c)ΔG &gt; 0 (DD ainda desloca para direita). Não neutraliza completamente.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Em 2015, o governo canadense pretendia adotar uma lei de orçamento equilibrado exigindo que o governo mantivesse um orçamento equilibrado em todos os momentos, ou seja: ΔG = ΔT. Esta lei implica que o governo não pode mais usar a política fiscal para afetar o emprego e a produção? Analise com o modelo DD-AA.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 4, Q3 (KOM Cap.17, Q3)</span>
+<button class="rb" data-gab="gab-27">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-28">
+<div class="ex-hd"><span class="ex-num">Exercício 28</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-28')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-28">
+<dl><dt>Choque de demanda (temporário)</dt><dd>Renda cai abruptamente. No gráfico duplo (cap 15): L(Y,R)↓ → R↓ → E↑. No DD-AA: não é diretamente analisado por gráfico duplo mas pelo efeito em E e Y.</dd>
+<dt>PM expansionista vs contracionista</dt><dd>Para contrabalançar queda de Y: M<sup>s</sup>↑ (expansionista) → R↓ → E↑ (mais depreciação → CA↑ → Y↑). Temporária não altera E<sup>e</sup>.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Um país está em equilíbrio cambial e monetário. Ocorre um choque de demanda que reduz a renda de forma abrupta e <strong>temporária</strong>. A autoridade monetária deseja reduzir os efeitos deste choque sobre o câmbio.</p>
+<p>a) Mostre através do <strong>gráfico duplo</strong> a situação de equilíbrio inicial e a situação após o choque de demanda. Explique brevemente.</p>
+<p>b) Qual política monetária (expansionista ou contracionista; temporária ou permanente) minimizaria os efeitos do choque sobre a taxa de câmbio nominal no curto prazo? Justifique.</p>
+<p>c) Suponha agora que o choque de demanda seja <strong>permanente</strong>. Descreva como uma política monetária permanente poderia ser usada para reduzir os efeitos sobre o câmbio real no longo prazo. Inclua os efeitos esperados sobre E nominal e E real.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: PI 2023.2, Q2</span>
+<button class="rb" data-gab="gab-28">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-29">
+<div class="ex-hd"><span class="ex-num">Exercício 29</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-29')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-29">
+<dl><dt>PM do Resto do Mundo</dt><dd>M<sup>s</sup><sub>RM</sub>↑ → P<sub>RM</sub>↑ → R<sub>RM</sub>↓ → E (dom/RM) ↓: moeda do RM deprecia → moeda doméstica aprecia. No DD-AA do doméstico: q = E·P<sub>RM</sub>/P<sub>D</sub>. Se E↓ e P<sub>RM</sub>↑, efeito sobre q é ambíguo no CP.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Existem apenas dois países: Resto do Mundo (RM) e Doméstico (D). O banco central do RM realiza uma <strong>política monetária expansionista</strong>. Use o modelo DD-AA para ilustrar como isso afeta a economia do país D. Em particular: o que acontece com o produto Y<sub>D</sub> e a taxa de câmbio? Como a resposta depende de o aumento ser percebido como <strong>permanente ou temporário</strong>? Como os formuladores do país D poderiam usar política monetária e fiscal para estabilizar a economia? Faz diferença qual delas é utilizada?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 4, Q4</span>
+<button class="rb" data-gab="gab-29">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-30">
+<div class="ex-hd"><span class="ex-num">Exercício 30</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-30')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-30">
+<dl><dt>Anúncio de política futura</dt><dd>Expectativa racional: se o mercado sabe que M<sup>s</sup>↑ no futuro → E<sup>e</sup>↑ já hoje → AA desloca hoje. O câmbio se move antes da política ser implementada.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Um novo governo vence uma eleição e anuncia que, assim que for empossado, <strong>aumentará a oferta monetária</strong>. Use o modelo DD-AA para estudar a resposta da economia a esse anúncio (antes da implementação). Compare com o que aconteceria se o aumento fosse não-anunciado (surpresa).</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: Lista 4, Q5 (KOM Cap.17, Q8)</span>
+<button class="rb" data-gab="gab-30">&#8595; Ver gabarito desta questão</button></div>
+</div>
+</section>
+<!-- ==================== TÓPICO 6: CAP 18 ==================== -->
+<section class="sec" id="t6">
+<h2>Tópico 6 — Cap. 18: Câmbio Fixo e Intervenção Cambial <span class="badge b-pr">PRIORITÁRIO</span></h2>
+
+<h3>&#128161; Explicação simplificada</h3>
+<p>Com câmbio fixo, o BC se compromete a manter E num valor pré-determinado. Para isso, compra ou vende moeda estrangeira (intervindo no mercado cambial). Essa intervenção muda a oferta de moeda doméstica — o BC perde autonomia monetária.</p>
+<p>O resultado mais importante: em câmbio fixo, <strong>política monetária é ineficaz</strong> (o BC não pode controlar a oferta de moeda — fica preso ao compromisso cambial) e <strong>política fiscal é muito eficaz</strong> (sem crowding-out cambial).</p>
+
+<div class="cb">
+<strong>Balanço do BC e Esterilização (linguagem exata do professor):</strong>
+<ul>
+<li><strong>Ativos externos:</strong> reservas internacionais (ex: compra de dólares)</li>
+<li><strong>Ativos domésticos:</strong> títulos públicos domésticos em carteira do BC</li>
+<li><strong>Esterilização:</strong> compra/venda de ativos domésticos para neutralizar o efeito da intervenção cambial sobre M<sup>s</sup></li>
+<li>Intervenção <em>não</em>-esterilizada: BC vende reservas → M<sup>s</sup> cai (pressão deflacionária)</li>
+<li>Intervenção esterilizada: BC vende reservas + compra títulos domésticos → M<sup>s</sup> constante</li>
+</ul>
+</div>
+
+<h3>Exercícios</h3>
+
+<div class="ex" id="ex-31">
+<div class="ex-hd"><span class="ex-num">Exercício 31</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-31')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-31">
+<dl><dt>Esterilização</dt><dd>BC compensa variação de ativos externos comprando/vendendo ativos domésticos. M<sup>s</sup> final = M<sup>s</sup> inicial. Curto prazo: funciona. Longo prazo: pode esgotar reservas.</dd>
+<dt>Intervenção cambial</dt><dd>BC compra divisas → M<sup>s</sup>↑ (expansionária). BC vende divisas → M<sup>s</sup>↓ (contracionária). Em câmbio fixo, deve intervir sempre que E pressiona para mudar.</dd></dl>
+</div>
+<div class="ex-body">
+<p>O Balanço do BC tem inicialmente: Ativos Domésticos = $500; Ativos Externos = $1.500; Passivo (Moeda em Circulação + Depósitos dos Bancos) = $2.000. O BC decide vender $300 de ativos externos no mercado cambial.</p>
+<p>a) Mostre como o balanço do BC se altera após a intervenção <strong>não-esterilizada</strong>. Qual o efeito sobre a oferta de moeda?</p>
+<p>b) Agora, o BC decide <strong>esterilizar</strong> a intervenção comprando ativos domésticos. Mostre o balanço final. Qual o efeito líquido sobre M<sup>s</sup>?</p>
+<p>c) Relacione a esterilização com a eficácia da política monetária em câmbio fixo.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: questão nova (baseada nas anotações do professor — Bloco 8)</span>
+<button class="rb" data-gab="gab-31">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-32">
+<div class="ex-hd"><span class="ex-num">Exercício 32</span><span class="badge b-md">MÉDIO-DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-32')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-32">
+<dl><dt>PM em câmbio fixo</dt><dd>M<sup>s</sup>↑ → AA desloca para cima → E pressiona para subir → BC intervém (vende divisas) → M<sup>s</sup> volta ao original → AA retorna. Efeito final nulo. O prof. escreve "ineficiência" no gráfico.</dd>
+<dt>PF em câmbio fixo</dt><dd>G↑ → DD desloca para direita → Y↑ → R↑ → E pressiona para cair → BC intervém (compra divisas) → M<sup>s</sup>↑ → AA desloca para cima → Y↑ ainda mais. Muito eficaz.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Use o modelo DD-AA com câmbio fixo (E = Ē) para analisar:</p>
+<p>a) O governo expande permanentemente o gasto público (G↑). Mostre o efeito no diagrama DD-AA. O que acontece com Y e com as reservas internacionais?</p>
+<p>b) O BC tenta aumentar a oferta de moeda (M<sup>s</sup>↑). Mostre que essa política é completamente ineficaz em câmbio fixo. Explique o mecanismo pelo qual o câmbio fixo anula a PM.</p>
+<p>c) O BC decide <strong>desvalorizar</strong> a moeda (E sobe de Ē₁ para Ē₂). Qual o efeito sobre Y no curto prazo? Compare com o efeito da política fiscal.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: questão nova (baseada nas anotações do professor — Bloco 8)</span>
+<button class="rb" data-gab="gab-32">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-33">
+<div class="ex-hd"><span class="ex-num">Exercício 33</span><span class="badge b-d">DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-33')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-33">
+<dl><dt>Ciclos monetários globais</dt><dd>Mudanças no Fed afetam R* no mundo todo → pela PDJ, câmbios de países emergentes se movem. Alta do Fed → R*↑ → capitais saem de emergentes → E<sub>emergente</sub>↑ (depreciação).</dd>
+<dt>Preocupação do COPOM com EUA</dt><dd>R*↑ → pela PDJ, para manter E estável o Brasil precisaria R<sub>BRA</sub>↑. Caso contrário: capital foge → BRL deprecia → inflação imported (pass-through) → meta fica mais difícil.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Ao longo do semestre foram comentadas as altas das taxas de juros dos títulos americanos (Treasuries de 10 anos).</p>
+<p>a) Por que as taxas de juros no mundo todo tendem a subir como consequência desse movimento? A condição de paridade das taxas de juros implica necessariamente que os juros dos outros países precisam subir? O que está acontecendo?</p>
+<p>b) O COPOM decidiu reduzir a taxa Selic em 50 pontos-base, justificando pela trajetória benigna da inflação. No entanto, afirmou que a elevação das taxas de longo prazo dos EUA "exige maior atenção por parte de países emergentes". Qual seria a preocupação do COPOM? Use a PDJ para fundamentar.</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: PI 2023.2, Q3 (itens a e b)</span>
+<button class="rb" data-gab="gab-33">&#8595; Ver gabarito desta questão</button></div>
+</div>
+</section>
+
+<!-- ==================== TÓPICO 7: CAP 19 ==================== -->
+<section class="sec" id="t7">
+<h2>Tópico 7 — Cap. 19: Sistemas Monetários Históricos <span class="badge b-co">COMPLEMENTAR</span></h2>
+<div class="wb"><strong>&#9888; Incidência zero nas PIs disponíveis.</strong> Estude por segurança — o prof. cobre no programa — mas priorize os outros tópicos.</div>
+
+<h3>&#128161; Explicação simplificada</h3>
+<p>A história do sistema monetário internacional é uma sequência de tentativas de criar regras para a cooperação cambial. O dilema central é o <strong>trilema de Mundell-Fleming</strong>: um país não pode ter simultaneamente (1) câmbio fixo, (2) livre mobilidade de capital e (3) autonomia de política monetária. Só dois dos três são possíveis ao mesmo tempo.</p>
+
+<div class="cb">
+<strong>Linha do tempo:</strong>
+<ul>
+<li><strong>Padrão-ouro (até 1914):</strong> câmbio fixo + livre capital = sem PM autônoma. Ajuste via deflação/inflação.</li>
+<li><strong>Bretton Woods (1944–1971):</strong> câmbio fixo ao dólar (USD fixo ao ouro) + controles de capital = PM autônoma limitada. Problema: dilema de Triffin.</li>
+<li><strong>Pós-Bretton Woods (1971–):</strong> câmbio flutuante para maioria + livre capital = PM autônoma. Alta volatilidade cambial.</li>
+</ul>
+</div>
+
+<div class="ex" id="ex-34">
+<div class="ex-hd"><span class="ex-num">Exercício 34</span><span class="badge b-f">FÁCIL</span>
+<button class="gbtn" onclick="toggleG('ex-34')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-34">
+<dl><dt>Padrão-ouro</dt><dd>Moedas têm paridade fixa com o ouro. Ajuste automático via fluxos de ouro e deflação/inflação (mecanismo de David Hume).</dd>
+<dt>Trilema de Mundell</dt><dd>Impossível ter simultaneamente: câmbio fixo + mobilidade de capital + PM autônoma. Escolha dois dos três.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Assinale V ou F e justifique:</p>
+<div class="sub">
+<p>1) No padrão-ouro, um país com déficit em conta corrente teria uma saída de ouro, o que reduziria sua oferta de moeda e levaria a uma deflação dos preços internos, restaurando o equilíbrio externo.</p>
+<p>2) O sistema de Bretton Woods permitia plena autonomia de política monetária para todos os países membros.</p>
+<p>3) O dilema de Triffin refere-se à tensão entre a necessidade global de dólares (como reserva) e a sustentabilidade do vínculo dólar-ouro.</p>
+<p>4) Após o colapso de Bretton Woods, a maioria dos países adotou câmbio fixo para evitar a volatilidade cambial.</p>
+</div>
+</div>
+<div class="ex-ft"><span class="orig">Origem: questão nova (KOM cap. 19)</span>
+<button class="rb" data-gab="gab-34">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-35">
+<div class="ex-hd"><span class="ex-num">Exercício 35</span><span class="badge b-m">MÉDIO</span>
+<button class="gbtn" onclick="toggleG('ex-35')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-35">
+<dl><dt>Bretton Woods</dt><dd>Sistema de câmbio fixo ajustável (1944–1971). USD fixo ao ouro a $35/oz. Demais moedas fixas ao dólar. FMI para empréstimos de ajuste de BdP.</dd>
+<dt>Dilema de Triffin</dt><dd>Para o mundo ter liquidez (dólares), EUA precisa ter déficits externos. Mas déficits acumulados solapam a confiança na conversibilidade ouro-dólar. Contradição fundamental.</dd></dl>
+</div>
+<div class="ex-body">
+<p>O sistema de Bretton Woods durou de 1944 a 1971. Usando o trilema de Mundell-Fleming, explique:</p>
+<p>a) Quais dois dos três objetivos do trilema o sistema de Bretton Woods privilegiava? O que era sacrificado?</p>
+<p>b) O que é o dilema de Triffin e por que ele tornou o sistema de Bretton Woods insustentável no longo prazo?</p>
+<p>c) Quando Nixon suspendeu a conversibilidade do dólar ao ouro em 1971, qual objetivo do trilema os EUA passaram a priorizar?</p>
+</div>
+<div class="ex-ft"><span class="orig">Origem: questão nova (KOM cap. 19)</span>
+<button class="rb" data-gab="gab-35">&#8595; Ver gabarito desta questão</button></div>
+</div>
+
+<div class="ex" id="ex-36">
+<div class="ex-hd"><span class="ex-num">Exercício 36</span><span class="badge b-md">MÉDIO-DIFÍCIL</span>
+<button class="gbtn" onclick="toggleG('ex-36')">&#9658; Glossário</button></div>
+<div class="gp" id="gp-ex-36">
+<dl><dt>Regime cambial</dt><dd>Conjunto de regras para gestão do câmbio. Float puro, float sujo (intervenção), crawling peg, câmbio fixo, currency board, união monetária.</dd>
+<dt>Crises cambiais</dt><dd>Ataque especulativo quando o mercado acredita que o câmbio fixo é insustentável. Reservas se esgotam e o BC é forçado a desvalorizar.</dd></dl>
+</div>
+<div class="ex-body">
+<p>Considere as seguintes afirmações sobre o trilema de Mundell-Fleming e as crises cambiais:</p>
+<p>I. Uma economia com plena mobilidade de capital e câmbio fixo não pode ter política monetária independente.</p>
+<p>II. O regime de currency board (como o da Argentina nos anos 1990) sacrifica a PM autônoma mas garante credibilidade anti-inflacionária.</p>
+<p>III. Em uma crise cambial especulativa, um BC com reservas abundantes sempre consegue defender o câmbio fixo indefinidamente.</p>
+<p>IV. A adoção do euro pelos países da Zona do Euro corresponde a um ponto extremo do trilema: câmbio irrevogavelmente fixo + plena mobilidade de capital, sem PM nacional.</p>
+<p><strong>São corretas:</strong></p>
+<ol type="a"><li>Apenas I e II</li><li>Apenas I, II e IV</li><li>Apenas II e III</li><li>Apenas III e IV</li><li>Todas as alternativas</li></ol>
+</div>
+<div class="ex-ft"><span class="orig">Origem: questão nova (KOM cap. 19)</span>
+<button class="rb" data-gab="gab-36">&#8595; Ver gabarito desta questão</button></div>
+</div>
+</section>
+<!-- ==================== GABARITOS ==================== -->
+<section class="sec" id="gabarito">
+<h2>Gabaritos</h2>
+<p style="margin-bottom:2em;color:#555">Clique em <strong>Ver gabarito</strong> em cada exercício para revelar o gabarito aqui. Use o botão <strong>&#8593; Voltar à questão</strong> para navegar.</p>
+
+<!-- GAB-01 -->
+<div class="gab" id="gab-01">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 1</span><button onclick="document.getElementById('ex-01').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Identidades contábeis fundamentais de economia aberta. RNB = PIB + renda líquida recebida do exterior. CA = S − I. Cada item exige dominar uma identidade diferente.</div>
+<div class="step"><strong>Item 1)</strong> Remessa de brasileiros no exterior para família no Brasil = transferência unilateral corrente RECEBIDA pelo Brasil = renda secundária = parte da RNB. RNB = PIB + renda recebida − renda enviada; essa remessa eleva o lado positivo. <span class="ans">Verdadeiro.</span></div>
+<div class="step"><strong>Item 2)</strong> Muitas empresas estrangeiras operam no país → grande renda de lucros/dividendos e juros ENVIADA ao exterior; poucas empresas domésticas operam fora → pouca renda RECEBIDA. Logo, renda líquida recebida &lt; 0, o que implica RNB &lt; PIB. PIB &gt; PNB(RNB). <span class="ans">Verdadeiro.</span></div>
+<div class="step"><strong>Item 3)</strong> Identidade: CA = S − I = (S<sub>priv</sub> + S<sub>pub</sub>) − I. Governo equilibrado → S<sub>pub</sub> = 0. Déficit em TC → CA &lt; 0 → S<sub>priv</sub> &lt; I → excesso de investimento sobre poupança privada. <span class="ans">Verdadeiro.</span></div>
+<div class="step"><strong>Item 4)</strong> Em economia aberta: I = S<sub>dom</sub> + (−CA) = S<sub>dom</sub> + poupança externa. Com poupança doméstica constante, a economia pode importar poupança do exterior (CA negativo) para financiar investimento adicional, elevando a formação de capital. <span class="ans">Verdadeiro.</span></div>
+<div class="err"><strong>Erro comum:</strong> Confundir "poupança" com "poupança privada": no item 3, o enunciado fala em equilíbrio do governo (S<sub>pub</sub> = 0), não em superávit. Se houvesse superávit público, parte do ajuste passaria pelo governo, e o déficit em CA não implicaria necessariamente que S<sub>priv</sub> &lt; I.</div>
+<div class="gsrc">Fonte do gabarito: Lista 1 (gabarito oficial do monitor)</div>
+</div>
+
+<!-- GAB-02 -->
+<div class="gab" id="gab-02">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 2</span><button onclick="document.getElementById('ex-02').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Classificar transações no BdP e calcular TC, reservas e NIIP. Lembre: donativos em mercadorias entram como importação + renda secundária recebida (neto zero no TC). Amortizações = conta financeira (não TC).</div>
+<div class="step"><strong>(a) Importações:</strong> A(350) + B(50, equipamentos financiados = importação corrente) + C(20, IED em equipamentos = importação de bem) + G(10, donativos em mercadorias) = <span class="ans">430 milhões — Verdadeiro.</span></div>
+<div class="step"><strong>(b) Saldo TC:</strong> X(400) − M(430) + Serviços(−50 fretes) + Renda Primária(−10 lucros − 20 juros) + Renda Secundária(+10 donativos) = 400 − 430 − 50 − 30 + 10 = <span class="ans">−100 milhões — Verdadeiro.</span></div>
+<div class="step"><strong>(c) PIB vs PNB:</strong> Renda primária líquida = −30 (enviada ao exterior). Logo PNB &lt; PIB, ou seja, PIB &gt; PNB. A afirmativa diz "PIB foi MENOR que PNB" → <span class="ans">Falso.</span></div>
+<div class="step"><strong>(d) Variação de reservas:</strong> Fluxos à vista: A(−350) + D(+400) + E(−50 fretes) + F(−30 renda primária à vista) + F(−30 amortizações) = −60. As reservas CAÍRAM $60mi. A afirmativa diz "aumento de $60mi" → <span class="ans">Falso.</span></div>
+<div class="step"><strong>(e) S<sub>priv</sub> vs I:</strong> CA = −100 &lt; 0. Com S<sub>pub</sub> = 0: CA = S<sub>priv</sub> − I → S<sub>priv</sub> − I = −100 → S<sub>priv</sub> &lt; I. A afirmativa diz "poupança privada foi MAIOR que investimento" → <span class="ans">Falso.</span></div>
+<div class="err"><strong>Erro comum:</strong> Colocar amortizações (item F) na TC. Amortizações = devolução de principal de dívida = conta financeira (FA), não TC. Apenas juros entram na TC (renda primária). Outro erro: esquecer o donativo (G) como importação nas reservas — mas donativos em mercadorias não geram fluxo de caixa nas reservas.</div>
+<div class="gsrc">Fonte do gabarito: Lista 1 Q4 (gabarito oficial do monitor)</div>
+</div>
+
+<!-- GAB-03 -->
+<div class="gab" id="gab-03">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 3</span><button onclick="document.getElementById('ex-03').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> ANPEC 2015. Classifique cada transação: bens (balança comercial), serviços, renda primária, renda secundária, conta financeira. Reservas = variação líquida de todos os fluxos de caixa.</div>
+<div class="step"><strong>(a) Balança comercial:</strong> Exportações(15) − Importações(7) = 8. A afirmativa diz "5 bilhões" → <span class="ans">Falso. (Balança comercial = +8, não +5.)</span></div>
+<div class="step"><strong>(b) Saldo TC:</strong> Bens(+8) + Serviços(−3 fretes) + Renda Primária(−5 juros) + Renda Secundária(+1 doações) = 8 − 3 − 5 + 1 = <span class="ans">+1 bilhão — Verdadeiro.</span></div>
+<div class="step"><strong>(c) Conta de Serviços:</strong> Fretes pagos ao exterior = −3. "Deficitário em $3 bilhões" → <span class="ans">Verdadeiro.</span></div>
+<div class="step"><strong>(d) Variação de reservas:</strong> TC = +1. FA: +16 (novos empréstimos recebidos) − 13 (amortizações pagas) = +3. Total = TC + FA = 1 + 3 = <span class="ans">+4 bilhões — Verdadeiro.</span></div>
+<div class="err"><strong>Erro comum no item (a):</strong> Somar fretes ou juros à balança comercial. Balança comercial = apenas bens (FOB). Serviços (fretes) e renda (juros) entram em outras subcontas da TC. No item (d): não esquecer de incluir amortizações na conta financeira (saída de capital = −13) e novos empréstimos (entrada = +16).</div>
+<div class="gsrc">Fonte do gabarito: Lista 1 Q5 (ANPEC 2015 Q1 — gabarito oficial)</div>
+</div>
+
+<!-- GAB-04 -->
+<div class="gab" id="gab-04">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 4</span><button onclick="document.getElementById('ex-04').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> PI 2025.2 Q1A. Cada alternativa testa uma identidade diferente. A estratégia: analisar cada alternativa pela lógica da identidade CA = Y − A e ΔNIIp = CA + valorização.</div>
+<div class="step"><strong>(a)</strong> CA = Y − A. Se Y &gt; A → CA &gt; 0 → Verdadeiro por definição. <em>Considerada correta pelo enunciado.</em></div>
+<div class="step"><strong>(b)</strong> NIIP pode aumentar mesmo com CA déficit? Via efeitos de valorização (ex.: USD depreciado eleva valor em USD dos ativos americanos no exterior). Verdadeiro em sentido estrito — mas requer valuation effects.</div>
+<div class="step"><strong>(c)</strong> Y &gt; A → CA &gt; 0 → país EXPORTA consumo presente (empresta ao exterior hoje) e IMPORTA consumo futuro. A afirmativa diz o contrário → Falso.</div>
+<div class="step"><strong>(d)</strong> Poupança só via riqueza externa → Falso. Pode poupar via investimento doméstico.</div>
+<div class="step"><strong>(e)</strong> CA &gt; 0 → NIIP aumenta (acumula-se riqueza externa líquida). Verdadeiro pelo identidade contábil padrão do KOM. <span class="ans">Alternativa (e) — CORRETA.</span></div>
+<div class="err"><strong>Atenção:</strong> Tanto (a) quanto (e) são verdadeiros por definição. O ponto didático da questão é (e): superávit em CC implica acumulação de riqueza externa, o insight central do Cap. 13. (c) é a pegadinha clássica — a direção do empréstimo intertempora é a inversa do que muitos pensam.</div>
+<div class="gsrc">Fonte do gabarito: PI 2025.2, Q1A (análise pelo professor)</div>
+</div>
+
+<!-- GAB-05 -->
+<div class="gab" id="gab-05">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 5</span><button onclick="document.getElementById('ex-05').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> PI 2025.2 Q1B. Encontrar a alternativa INCORRETA sobre a estrutura do BdP. Analise cada item pela lógica BdP e pelas identidades contábeis.</div>
+<div class="step"><strong>(a)</strong> BdP é registro das transações do país com o exterior → Correto por definição.</div>
+<div class="step"><strong>(b) <span class="ans">INCORRETA.</span></strong> "Superávit em CC indefinidamente sem que isso afete a NIIP" — Impossível. CA &gt; 0 implica acumulação contínua de ativos externos (NIIP sobe). A NIIP é afetada sim — cresce indefinidamente. Esta é a afirmativa INCORRETA.</div>
+<div class="step"><strong>(c)</strong> Com KA = 0: CC + FA = 0 (identidade do BdP). CC &lt; 0 → FA &lt; 0 (o país incorre em mais passivos do que adquire ativos = variação negativa de posição financeira líquida). Correto sob convenção BPM6 usada pelo BCB.</div>
+<div class="step"><strong>(d)</strong> EUA: déficit em CC 2002–2007 mas NIIP melhorou. Mecanismo: USD depreciou → valor em USD dos ativos americanos no exterior subiu (ações estrangeiras valorizaram mais que dívidas em USD). Correto — este é o caso clássico do KOM Cap. 13.</div>
+<div class="step"><strong>(e)</strong> NIIP negativa com renda líquida positiva: possível quando país paga juros baixos sobre passivos (dívida soberana de países desenvolvidos) mas recebe retornos altos nos ativos (ações, IED). O próprio KOM menciona o caso dos EUA. Correto.</div>
+<div class="err"><strong>Erro comum:</strong> Confundir (c) com algo errado. A confusão vem do sinal da conta financeira: sob BPM6, CC déficit → FA também é negativo (o país aumenta seus passivos líquidos). Mas isso não é INCORRETO — é exatamente o que acontece.</div>
+<div class="gsrc">Fonte do gabarito: PI 2025.2, Q1B (análise pelo professor)</div>
+</div>
+<!-- GAB-06 -->
+<div class="gab" id="gab-06">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 6</span><button onclick="document.getElementById('ex-06').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Exercício de intuição sobre taxas de câmbio e preços relativos. O câmbio nominal transforma preços em moeda estrangeira para moeda doméstica. A depreciação do importador encarece o bem importado.</div>
+<div class="step"><strong>(a) Preço relativo inicial:</strong> Lanche em Munique = 5 EUR × 1,50 USD/EUR = 7,50 USD. Hot-dog = 4 USD. Preço relativo = 7,50/4 = <strong>1,875 hot-dogs por lanche</strong>. Após valorização do dólar (1,25 USD/EUR): lanche = 5 × 1,25 = 6,25 USD. Preço relativo = 6,25/4 = <strong>1,5625 hot-dogs por lanche</strong>. O lanche ficou mais barato em termos de hot-dogs → <span class="ans">o hot-dog ficou mais caro em relação ao lanche.</span></div>
+<div class="step"><strong>(b) Nippon Steel:</strong> Importa petróleo em USD; receitas em JPY. Com depreciação do iene (JPY cai em relação ao USD): o mesmo barril de petróleo custa mais JPY → custos sobem → <span class="ans">tendência de redução dos lucros</span> (a menos que repasse o custo ao preço final, o que é difícil em mercados competitivos).</div>
+<div class="step"><strong>(c) Outsourcing:</strong> USD mais fraco → serviços e salários em outros países ficam relativamente mais caros para empresas americanas (precisam de mais USD para pagar em moeda estrangeira) → <span class="ans">tendência de diminuição do outsourcing</span> internacional por empresas americanas.</div>
+<div class="err"><strong>Erro comum em (a):</strong> Inverter o preço relativo. Se o dólar se valoriza (USD/EUR cai), o bem europeu fica mais barato em dólares, não mais caro. Logo o hot-dog (americano) fica relativamente mais caro comparado ao lanche (europeu).</div>
+<div class="gsrc">Fonte do gabarito: Lista 1 Q6 (gabarito oficial do monitor)</div>
+</div>
+
+<!-- GAB-07 -->
+<div class="gab" id="gab-07">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 7</span><button onclick="document.getElementById('ex-07').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> PDJ/UIP em ação: notícias sobre o futuro alteram E<sup>e</sup> ou R imediatamente via arbitragem de ativos. O câmbio se ajusta instantaneamente quando chegam novas informações, mesmo antes de qualquer política ser implementada.</div>
+<div class="step"><strong>(a) Alta futura de R<sub>$</sub>:</strong> Notícia: R<sub>USD</sub> vai subir → retorno de depósitos em USD sobe → curva de retorno em USD desloca para a DIREITA (mais retorno para qualquer E) → No ponto de equilíbrio: E<sub>$/€</sub> CAIR (dólar aprecia, euro deprecia). <span class="ans">O câmbio E<sub>$/€</sub> cai hoje, mesmo antes de a taxa subir.</span></div>
+<div class="step"><strong>(b) Queda futura de R<sub>€</sub>:</strong> Anúncio de corte de juros do euro → R<sub>€</sub> vai cair no futuro → pela PDJ, retorno futuro de ativos em EUR cai → mercado revisa E<sup>e</sup><sub>$/€</sub> para BAIXO (euro valerá menos futuramente) → a curva de retorno de depósitos em EUR desloca para baixo → <span class="ans">E<sub>$/€</sub> cai imediatamente (euro deprecia já hoje).</span></div>
+<div class="err"><strong>Erro comum:</strong> Esquecer que o câmbio é um preço de ativo e reage imediatamente a novas informações. Muitos alunos pensam que o câmbio só muda quando a taxa de juros efetivamente mudar — mas a PDJ implica que as expectativas se traduzem em movimentos presentes do câmbio.</div>
+<div class="gsrc">Fonte do gabarito: Lista 1 Q8 (gabarito oficial do monitor)</div>
+</div>
+
+<!-- GAB-08 -->
+<div class="gab" id="gab-08">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 8</span><button onclick="document.getElementById('ex-08').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> CIP (Paridade Coberta de Juros). A chave é converter as cotações para a mesma base: ZAR/NGN (ou NGN/ZAR). O prêmio forward da moeda A contra B = (F − E)/E, sempre expresso na mesma convenção de cotação.</div>
+<div class="step"><strong>Conversão:</strong> Spot = 20 NGN/ZAR → E<sub>ZAR/NGN</sub> = 1/20. Forward = 23 NGN/ZAR → F<sub>ZAR/NGN</sub> = 1/23.</div>
+<div class="step"><strong>(a) Prêmio forward do NGN contra ZAR:</strong> Expresso como ZAR por NGN:
+<div class="fb"><span class="frac"><span class="num">F<sub>ZAR/NGN</sub> − E<sub>ZAR/NGN</sub></span><span class="den">E<sub>ZAR/NGN</sub></span></span> = <span class="frac"><span class="num">1/23 − 1/20</span><span class="den">1/20</span></span> = <span class="frac"><span class="num">20 − 23</span><span class="den">23</span></span> ≈ <strong>−0,13 (−13%)</strong></div>
+<span class="ans">NGN tem um DESCONTO forward de 13% em relação ao ZAR (NGN vai depreciar 13% contra ZAR).</span></div>
+<div class="step"><strong>(b) Diferencial de juros (CIP):</strong> Pela CIP, o diferencial de juros = prêmio forward. i<sub>ZAR</sub> − i<sub>NGN</sub> = −0,13 → <span class="ans">i<sub>NGN</sub> − i<sub>ZAR</sub> = +13%. Depósitos em NGN pagam ~13% mais que em ZAR para compensar a depreciação esperada do NGN.</span></div>
+<div class="err"><strong>Erro comum:</strong> Usar 20 NGN/ZAR diretamente sem converter para ZAR/NGN. O prêmio forward do NGN CONTRA o ZAR deve ser expresso em ZAR por NGN, não NGN por ZAR. Se você calcular (23−20)/20 = +0,15, obtém o prêmio do ZAR (que aprecia contra o NGN), não o do NGN.</div>
+<div class="gsrc">Fonte do gabarito: Lista 1 Q9 / KOM Cap. 14 Q15 (gabarito oficial)</div>
+</div>
+
+<!-- GAB-09 -->
+<div class="gab" id="gab-09">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 9</span><button onclick="document.getElementById('ex-09').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Prêmio de risco ρ entra na PDJ como custo adicional de manter ativos no país Emergente. A nova PDJ é: R = R* + ρ + (E<sup>e</sup> − E)/E. Use o gráfico duplo para mostrar o equilíbrio.</div>
+<div class="step"><strong>(a) BC passivo — mecanismo:</strong> ρ↑ → retorno exigido de ativos externos (para o doméstico) sobe → a curva de retorno estrangeiro no gráfico de câmbio desloca para CIMA → para manter R constante (M<sup>s</sup> e Y constantes → mercado monetário inalterado → R = R<sub>eq</sub>), o equilíbrio requer E↑ (depreciação da moeda doméstica) suficiente para tornar a apreciação esperada (E<sup>e</sup>−E)/E negativa e compensar ρ↑. <span class="ans">R permanece inalterado; E sobe (depreciação).</span></div>
+<div class="step"><strong>(b) BC quer manter E constante:</strong> Com ρ↑ e E fixo, a PDJ exige R mais alto. O BC deve promover uma <strong>contração monetária</strong> (M<sup>s</sup>↓) → no painel monetário: curva L desloca para cima relativo a M<sup>s</sup>/P → novo R de equilíbrio mais alto → R↑ → torna ativos domésticos mais atraentes mesmo com ρ↑ → câmbio se mantém. <span class="ans">Política: PM contracionista. Custo: taxa de juros mais alta (pressão sobre crédito e atividade).</span></div>
+<div class="err"><strong>Erro comum:</strong> Pensar que ρ afeta o painel do mercado monetário diretamente. Não afeta. O prêmio de risco está na PDJ (painel cambial). O canal é: ρ↑ → câmbio pressiona para depreciar → para segurar E, BC precisa agir no mercado monetário (contração).</div>
+<div class="gsrc">Fonte do gabarito: Lista 2 Q5 (gabarito oficial do monitor)</div>
+</div>
+
+<!-- GAB-10 -->
+<div class="gab" id="gab-10">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 10</span><button onclick="document.getElementById('ex-10').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Caso real do unwinding do carry trade em JPY. Cada item testa um aspecto diferente: definição, fórmula, riscos, mecânica. Responda com termos econômicos precisos da PDJ.</div>
+<div class="step"><strong>(a) Carry trade:</strong> <span class="ans">Estratégia de tomar empréstimos em moeda com taxa de juros baixa (moeda de financiamento: JPY) e investir em ativos denominados em moeda com taxa de juros alta (moeda-alvo: BRL). O lucro é o diferencial de juros R<sub>BRL</sub> − R<sub>JPY</sub>, correndo o risco cambial de que o JPY se valorize (eliminando o ganho).</span></div>
+<div class="step"><strong>(b) Fórmula (PDJ):</strong> A operação é lucrativa se:
+<div class="fb">R<sub>BRL</sub> &gt; R<sub>JPY</sub> + <span class="frac"><span class="num">E<sup>e</sup><sub>R$/¥</sub> − E<sub>R$/¥</sub></span><span class="den">E<sub>R$/¥</sub></span></span></div>
+Ou seja: o diferencial de juros supera a depreciação esperada do BRL contra o JPY. <span class="ans">Na ausência de PDJ (câmbio menos volátil do que a paridade prevê), o carry trade é lucrativo.</span></div>
+<div class="step"><strong>(c) Riscos:</strong> <span class="ans">(1) Risco cambial: JPY pode se valorizar inesperadamente (crash do carry trade). (2) Risco de liquidez: quando todos desfazem posições simultaneamente, o efeito é amplificado. Esses dois riscos interagem: a crise de crédito faz todos saírem ao mesmo tempo, causando exatamente a apreciação do JPY que temiam.</span></div>
+<div class="step"><strong>(d) Maior carry trade do mundo:</strong> <span class="ans">Financiamento massivo em ienes japoneses (BoJ taxa próxima de 0% por décadas) para investir em mercados emergentes (BRL, TRY) e em títulos americanos de maior rendimento.</span></div>
+<div class="step"><strong>(e) Unwinding após alta do BoJ:</strong> BoJ sobe taxa para 0,25% → custo do empréstimo em JPY sobe → spread diminui → investidores desfazem o carry trade: VENDEM ativos em BRL (ações, títulos) e COMPRAM JPY para quitar empréstimos → BRL deprecia fortemente, Ibovespa cai (fluxo de saída de capital). <span class="ans">Mecanismo: venda de ativos brasileiros → saída de capital → BRL cai → mercado financeiro doméstico sob pressão.</span></div>
+<div class="step"><strong>(f) BdP e BCB:</strong> A entrada do carry trade no Brasil aparece como INVESTIMENTO EM CARTEIRA (portfólio) na Conta Financeira — lado dos PASSIVOS (estrangeiros comprando ativos domésticos). A saída (unwinding) = redução de passivos na FA. <span class="ans">BCB pode: (1) vender reservas internacionais (USD) para comprar BRL no mercado cambial, atenuando a depreciação; (2) elevar a Selic, restaurando o diferencial de juros.</span></div>
+<div class="err"><strong>Erro comum:</strong> Classificar o carry trade como IED (investimento estrangeiro direto). É investimento em CARTEIRA (portfólio) — aplicações financeiras de curto prazo em títulos e ações, não participação societária de longo prazo.</div>
+<div class="gsrc">Fonte do gabarito: Lista 1 Q10 (gabarito oficial do monitor)</div>
+</div>
+<!-- GAB-11 -->
+<div class="gab" id="gab-11">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 11</span><button onclick="document.getElementById('ex-11').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Aplicação prática da PDJ ao caso Brasil/EUA. Cada item testa um aspecto diferente: gráfico de equilíbrio, variáveis exógenas, estratégia cambial e explicação histórica.</div>
+<div class="step"><strong>(a) Gráfico e variáveis exógenas:</strong> Eixo Y = E (R$/USD, quem é mais caro muda o câmbio). Curva de retorno doméstico (vertical em R<sub>SELIC</sub>) + curva de retorno externo (inclinada negativamente em função de E): R<sub>FED</sub> + (E<sup>e</sup> − E)/E. Equilíbrio: interseção. <span class="ans">Variáveis exógenas: (1) Selic, (2) taxa de juros dos EUA (FED funds), (3) expectativa de câmbio futuro E<sup>e</sup>.</span></div>
+<div class="step"><strong>(b) Estratégia com Selic em alta e FED em queda:</strong> Diferencial de juros R<sub>BRL</sub> − R<sub>USD</sub> aumenta → pela PDJ, para manter equilíbrio, E deve CAIR (BRL aprecia) ou as expectativas de depreciação devem aumentar. Com Selic subindo e FED caindo: <span class="ans">tende a haver apreciação do BRL (queda do E R$/USD). Sugestão: manter recursos em BRL e comprar os dólares perto da data da viagem.</span></div>
+<div class="step"><strong>(c) Estratégia do tio (manter BRL e comprar USD na hora):</strong> Câmbio spot = R$5,71; câmbio futuro = R$6,13. Prêmio forward = (6,13−5,71)/5,71 ≈ 7,4%. Selic = 13,25%, FED = 4,5%, diferencial ≈ 8,75%. Pela CIP, a diferença entre manter em BRL ou comprar dólares agora é pequena (ambas devem ser equivalentes pela PDJ/CIP). <span class="ans">A estratégia do tio faz sentido pelas projeções (Selic sobe, FED cai → BRL valoriza), mas a PDJ sugere que em equilíbrio é indiferente. Não há almoço grátis garantido.</span></div>
+<div class="step"><strong>(d) Por que R$1,70 em 2008 vs R$5,70 hoje:</strong> <span class="ans">Múltiplos fatores ao longo do tempo: (1) Inflação acumulada diferencial Brasil–EUA (PPC relativa: Brasil inflacionou mais → câmbio real se depreciou). (2) Deterioração das contas externas (déficits crescentes em TC). (3) Prêmio de risco soberano crescente. (4) Ciclos de commodities (boom de 2004–2011 valorizou o BRL; queda posterior depreciou). (5) Crises fiscais e políticas domésticas elevaram o risco-país.</span></div>
+<div class="err"><strong>Erro comum em (d):</strong> Explicar a depreciação como um fenômeno puramente monetário ou puramente real. A depreciação de longo prazo do BRL reflete TANTO a inflação diferencial (fator monetário, via PPC) QUANTO choques reais (deterioração de fundamentos, prêmio de risco).</div>
+<div class="gsrc">Fonte do gabarito: Lista 1 Q7 (gabarito oficial do monitor)</div>
+</div>
+
+<!-- GAB-12 -->
+<div class="gab" id="gab-12">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 12</span><button onclick="document.getElementById('ex-12').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Dois subitens independentes: estabilidade do equilíbrio monetário (análise de estática) e resposta do BC a um choque de produtividade (política monetária acomodatícia).</div>
+<div class="step"><strong>(a) Estabilidade:</strong> <span class="ans">Sim, o equilíbrio é estável.</span> Se R &gt; R<sub>eq</sub>: demanda por moeda L(Y,R) é baixa (R alto → custo de oportunidade de manter moeda é alto) → excesso de oferta de moeda → R cai de volta ao equilíbrio. Se R &lt; R<sub>eq</sub>: excesso de demanda por moeda → R sobe. Em ambos os casos, há retorno automático ao equilíbrio.</div>
+<div class="step"><strong>(b) Choque de produtividade Y↑:</strong> Y↑ → L(Y, R)↑ (mais transações demandam mais moeda) → excesso de demanda por moeda (com M<sup>s</sup> constante) → R↑ (pressão de alta). Para evitar alta de R: <span class="ans">BC aumenta M<sup>s</sup> (política monetária expansionista acomodatícia) proporcionalmente ao aumento de L, deslocando a oferta de moeda para a direita. O novo equilíbrio tem maior Y, maior M<sup>s</sup>, mas mesmo R.</span></div>
+<div class="err"><strong>Erro comum:</strong> Confundir deslocamento de curvas. No painel monetário (R no eixo Y, M<sup>s</sup>/P no eixo X): o choque de produtividade desloca a curva L para cima (mais demanda para qualquer R). O BC desloca a oferta M<sup>s</sup>/P para a direita para encontrar o ponto de R original.</div>
+<div class="gsrc">Fonte do gabarito: Lista 2 Q1 (gabarito oficial do monitor)</div>
+</div>
+
+<!-- GAB-13 -->
+<div class="gab" id="gab-13">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 13</span><button onclick="document.getElementById('ex-13').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Use as cadeias causais com setas. A diferença entre temporário e permanente está nas expectativas: o choque permanente altera E<sup>e</sup> (câmbio esperado de longo prazo), o temporário não.</div>
+<div class="step"><strong>Redução TEMPORÁRIA em L:</strong>
+<div class="fb">↓L(R,Y) ⇒ excesso de oferta de moeda ⇒ ↓R ⇒ ↑E <em>[CP]</em><br>LP: sem efeito (economia volta ao equilíbrio original; E<sup>e</sup> não muda)</div>
+<span class="ans">CP: R↓, E↑ (depreciação). LP: tudo volta ao nível inicial.</span></div>
+<div class="step"><strong>Redução PERMANENTE em L — três efeitos simultâneos no CP:</strong>
+<div class="fb">1. ↓L(R,Y) ⇒ ↓R ⇒ ↑E &nbsp; (mercado monetário)<br>2. ↓L<sup>perm</sup> ⇒ ↑E<sup>e</sup> &nbsp; (expectativas de LP: menos demanda por moeda no futuro → P↑ no LP → E↑ no LP)<br>3. ↑E<sup>e</sup> desloca retorno estrangeiro ⇒ ↑E ainda mais (overshooting)</div>
+<span class="ans">CP: R↓, E↑↑ (depreciação forte, com overshooting). LP: P↑ → M<sup>s</sup>/P↓ → R↑ → E↓ parcialmente até E<sub>LP</sub> &gt; E<sub>0</sub>.</span></div>
+<div class="err"><strong>Erro comum:</strong> Esquecer o segundo efeito (mudança nas expectativas E<sup>e</sup>) no caso permanente. É exatamente esse efeito extra que causa o overshooting e diferencia o resultado do temporário do permanente.</div>
+<div class="gsrc">Fonte do gabarito: Lista 2 Q2 (gabarito oficial do monitor)</div>
+</div>
+
+<!-- GAB-14 -->
+<div class="gab" id="gab-14">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 14</span><button onclick="document.getElementById('ex-14').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> PI 2023.2 Q1b. Com pass-through cambial (P depende de E), uma depreciação eleva o índice de preços no CP, reduzindo M<sup>s</sup>/P e atenuando o choque monetário. Compare as estratégias gradual vs tempestiva.</div>
+<div class="step"><strong>Mecanismo com P = α·P<sub>d</sub> + (1−α)·E·P<sub>ext</sub>:</strong> Uma depreciação (E↑) → P↑ imediatamente (mesmo no CP) → M<sup>s</sup>/P diminui → o excesso de oferta de moeda é menor → R não cai tanto → E não deprecia tanto. <span class="ans">O pass-through ATENUA o overshooting.</span></div>
+<div class="step"><strong>Expansão TEMPESTIVA (tudo de uma vez):</strong> M<sup>s</sup>↑↑ → E↑↑ → P↑ (via pass-through) → M<sup>s</sup>/P cai → R sobe parcialmente de volta. <span class="ans">Pró: ajuste rápido, sinalização clara. Contra: pico de câmbio e inflação no CP mais alto; instabilidade imediata.</span></div>
+<div class="step"><strong>Expansão GRADUAL:</strong> Cada incremento de M<sup>s</sup> causa pequena depreciação → pequena alta de P → suave. <span class="ans">Pró: menos volatilidade no CP. Contra: incerteza prolongada; agentes não sabem onde o câmbio vai estabilizar. No curto prazo puro, a gradual é mais estável mas o agente fica com incerteza por mais tempo.</span></div>
+<div class="err"><strong>Erro comum:</strong> Ignorar o pass-through. No modelo padrão (P fixo no CP), o pass-through é zero (α = 0 implica que P não depende de E). Aqui, α &gt; 0 → P SOBE no CP quando E sobe, o que muda toda a análise do overshooting.</div>
+<div class="gsrc">Fonte do gabarito: PI 2023.2, Q1b (análise do professor)</div>
+</div>
+
+<!-- GAB-15 -->
+<div class="gab" id="gab-15">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 15</span><button onclick="document.getElementById('ex-15').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 2 Q3. A hipótese padrão do modelo de overshooting é Y exógeno. Relaxar isso — Y cresce quando M<sup>s</sup> expande — acrescenta um terceiro efeito que ATENUA o overshooting.</div>
+<div class="step"><strong>(a) Efeito de Y endógeno sobre o overshooting:</strong>
+<div class="fb">↑M<sup>s</sup> ⇒ ↓R ⇒ ↑I ⇒ ↑Y ⇒ ↑L(Y,R) ⇒ ↑R (efeito parcial)</div>
+O terceiro efeito (↑Y → ↑L → ↑R) ATENUA a queda de R. R cai menos → E sobe menos no CP. <span class="ans">O overshooting é MENOR quando Y é endógeno (E<sub>CP</sub> fica mais próximo de E<sub>LP</sub>).</span></div>
+<div class="step"><strong>(b) Undershooting possível?</strong> Undershooting = E<sub>CP</sub> &lt; E<sub>LP</sub> (câmbio deprecia menos no CP do que no LP). Isso exigiria que o aumento de L(Y,R) causado pelo Y↑ fosse MAIOR do que o aumento de M<sup>s</sup>. <span class="ans">Possível teoricamente, mas economicamente improvável: exige que a demanda por moeda gerada pelo aumento de Y supere o próprio aumento de moeda — um caso extremo de elasticidade de Y sobre L.</span></div>
+<div class="err"><strong>Erro comum:</strong> Confundir undershooting com deflation. Undershooting da taxa de câmbio significa que E<sub>CP</sub> &lt; E<sub>LP</sub> — o câmbio no curto prazo ficou ABAIXO do nível de longo prazo (deprecia menos do que deveria). Isso não tem relação direta com deflação nos preços.</div>
+<div class="gsrc">Fonte do gabarito: Lista 2 Q3 (gabarito oficial do monitor)</div>
+</div>
+<!-- GAB-16 -->
+<div class="gab" id="gab-16">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 16</span><button onclick="document.getElementById('ex-16').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> PI 2025.1 Q1. Contração monetária PERMANENTE usa o gráfico duplo. Lembre: permanente → E<sup>e</sup> também cai (menos moeda no LP → menos preços → câmbio aprecia no LP). Esse duplo efeito cria overshooting na APRECIAÇÃO.</div>
+<div class="step"><strong>(a) CP — gráfico duplo:</strong>
+<div class="fb">↓M<sup>s</sup> ⇒ M<sup>s</sup>/P↓ ⇒ excesso de demanda ⇒ R↑<br>Permanente: ↓M<sup>s</sup> ⇒ ↓P<sub>LP</sub> ⇒ ↓E<sub>LP</sub> ⇒ ↓E<sup>e</sup> &nbsp; (apreciação esperada)<br>PDJ: R↑ + ↓E<sup>e</sup> ⇒ ↓↓E (apreciação FORTE no CP = overshooting)</div>
+<span class="ans">CP: R↑↑, E↓↓ (apreciação além do LP — overshooting de apreciação). LP: P↓ → M<sup>s</sup>/P normaliza → R volta ao original → E↓ (aprecia, mas menos que no CP). Trajetória: E<sub>CP</sub> &lt; E<sub>LP</sub> &lt; E<sub>0</sub>.</span></div>
+<div class="step"><strong>(b) Política fiscal expansionista na contramão:</strong> G↑ → Y↑ → L(Y,R)↑ → R↑ ainda mais no CP. Mas a PF também eleva a taxa de câmbio real de equilíbrio (se for permanente, muda E<sup>e</sup>). <span class="ans">Depende da magnitude: se PF compensa completamente a queda de Y gerada pela PM (via crowding-in), R pode ser ainda mais alto no CP. Em câmbio flutuante, PM ativa o câmbio mais; PF pode estabilizar Y mas o câmbio se aprecia mesmo assim (lógica do modelo: R alto atrai capital → E cai).</span></div>
+<div class="err"><strong>Erro comum:</strong> Esquecer que no CP de uma PM permanente há DOIS efeitos que apreciam o câmbio: (1) R↑ (pelo mercado monetário) e (2) E<sup>e</sup>↓ (por expectativas de LP mais baixas). É o somatório dos dois que cria o overshooting de apreciação.</div>
+<div class="gsrc">Fonte do gabarito: PI 2025.1, Q1 (análise pelo professor)</div>
+</div>
+
+<!-- GAB-17 -->
+<div class="gab" id="gab-17">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 17</span><button onclick="document.getElementById('ex-17').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 2 Q4 / PI 2025.2 Q3 adaptado. Choque de produtividade permanente no Doméstico: analise CP e LP separadamente. No LP, efeito Fisher: P<sub>D</sub>↓ → M<sup>s</sup>/P↑ → R<sub>D</sub>↓ → câmbio se deprecia parcialmente de volta.</div>
+<div class="step"><strong>(a) E = dólares por euro. Doméstico = EUA (emissor de USD). Choque Y<sub>D</sub>↑ permanente:</strong>
+<div class="fb"><strong>CP (P fixo):</strong> ↑Y<sub>D</sub> ⇒ ↑L(Y,R) ⇒ ↑R<sub>D</sub> ⇒ ↓E<sub>$/€</sub> (USD aprecia, euro deprecia)<br>Além disso, E<sup>e</sup>↓ (LP: P<sub>D</sub>↓ → câmbio LP aprecia) ⇒ ↓↓E<sub>$/€</sub> (apreciação ainda mais forte)<br><strong>LP (P flexível):</strong> ↓P<sub>D</sub> ⇒ ↑M<sup>s</sup>/P ⇒ ↓R<sub>D</sub> (volta ao original) ⇒ ↑E<sub>$/€</sub> (depreciação parcial de volta)</div>
+<span class="ans">CP: E<sub>$/€</sub> cai fortemente (overshooting de apreciação do USD). LP: E<sub>$/€</sub> sobe parcialmente, mas fica abaixo do valor inicial. USD ainda mais forte no LP do que antes do choque.</span></div>
+<div class="step"><strong>(b) BCE quer anular efeito de LP:</strong> No LP, E<sub>$/€</sub> caiu (euro depreciou). Para que E<sub>LP</sub> volte ao original, o euro precisa se APRECIAR de volta → BCE deve fazer PM <strong>contracionista</strong> (↓M<sup>s</sup><sub>EU</sub>) → menos euros em circulação → P<sub>EU</sub>↓ no LP → E<sub>$/€</sub> sobe (euro aprecia → E volta ao original).
+<div class="fb">↓M<sup>s</sup><sub>EU</sub> ⇒ ↑R<sub>EU</sub> no CP ⇒ ↑E<sub>$/€</sub> no CP (euro aprecia hoje)</div>
+<span class="ans">No CP: tanto o choque de produtividade (USD aprecia) quanto a contração do BCE (euro aprecia) ocorrem simultaneamente. O efeito líquido no CP é ambíguo (depende das magnitudes). No LP: E<sub>$/€</sub> retorna ao original se o BCE calibrar perfeitamente a contração.</span></div>
+<div class="err"><strong>Erro comum:</strong> Concluir que o BCE deve fazer PM expansionista para "contra-atacar" a queda de E. Mas para apreciar o euro (E<sub>$/€</sub>↑ = euro vale mais dólares), o BCE deve CONTRAIR (menos euros → euro mais valioso). Expansão depreciaria ainda mais o euro.</div>
+<div class="gsrc">Fonte do gabarito: Lista 2 Q4 / PI 2025.2 Q3 (gabarito oficial)</div>
+</div>
+
+<!-- GAB-18 -->
+<div class="gab" id="gab-18">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 18</span><button onclick="document.getElementById('ex-18').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 3 Q1. PPC relativa em forma pura: a taxa de câmbio deve se ajustar pelo diferencial de inflação entre os dois países ao longo do tempo.</div>
+<div class="step"><strong>Fórmula da PPC relativa:</strong>
+<div class="fb"><span class="frac"><span class="num">ΔE</span><span class="den">E</span></span> = π<sub>RUS</sub> − π<sub>CH</sub> = 100% − 15% = <strong>+85%</strong></div>
+E = franco suíço por rublo. ΔE/E &gt; 0 → câmbio sobe → rublo DEPRECIA em relação ao franco suíço (ou: o franco aprecia 85% em relação ao rublo). <span class="ans">O rublo deve depreciar aproximadamente 85% em relação ao franco suíço ao longo do ano. Alternativamente: 1 franco suíço comprará 85% mais rublos no final do ano.</span></div>
+<div class="err"><strong>Erro comum:</strong> Confundir qual moeda aprecia e qual deprecia. O país com maior inflação (Rússia) tem a moeda que DEPRECIA (rublo compra menos francos com o tempo). A intuição: a Rússia está inflacionando mais → seus bens ficam relativamente caros → a taxa de câmbio deve ajustar para manter o poder de compra relativo.</div>
+<div class="gsrc">Fonte do gabarito: Lista 3 Q1 (KOM exercício)</div>
+</div>
+
+<!-- GAB-19 -->
+<div class="gab" id="gab-19">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 19</span><button onclick="document.getElementById('ex-19').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 3 Q2. Cada item testa a hierarquia entre PPC absoluta, relativa e Lei do Preço Único (LPU). Lembre: PPC absoluta = caso mais forte (nível de câmbio); PPC relativa = caso mais fraco (variações).</div>
+<div class="step"><strong>1) "PPC relativa ⇒ PPC absoluta":</strong> <span class="ans">FALSO.</span> PPC relativa fala de VARIAÇÕES de câmbio (ΔE/E = π − π*). PPC absoluta fala de NÍVEIS (E = P/P*). Pode haver desvio permanente de nível que se mantém constante no tempo — as variações seriam iguais (PPC relativa vale) sem que os níveis se igualem (PPC absoluta não vale). A implicação é o inverso: absoluta ⇒ relativa, não o contrário.</div>
+<div class="step"><strong>2) "PPC absoluta exige LPU":</strong> <span class="ans">VERDADEIRO.</span> A PPC absoluta é a agregação da LPU sobre todos os bens. Se a LPU vale para cada bem individualmente, e os índices de preços usam os mesmos pesos, a PPC absoluta decorre da LPU. Sem LPU, há desvios de PPC absoluta.</div>
+<div class="step"><strong>3) "Nontradables permitem desvios sistemáticos da PPC":</strong> <span class="ans">VERDADEIRO.</span> Bens não-comercializáveis (serviços de barbearia, aluguéis) não estão sujeitos à arbitragem internacional. Se produtividade cresce nos tradables (efeito Balassa-Samuelson), salários sobem → preços dos nontradables sobem → P geral sobe sem que E ajuste → q cai (apreciação real) → desvio persistente da PPC.</div>
+<div class="step"><strong>4) "Pricing-to-market fortalece a LPU":</strong> <span class="ans">FALSO.</span> Pricing-to-market (PTM) é o oposto: empresas com poder de mercado COBRAM PREÇOS DIFERENTES em mercados diferentes (não repassam integralmente as variações cambiais). Isso é uma violação da LPU, não um fortalecimento.</div>
+<div class="err"><strong>Erro comum no item 1:</strong> Inverter a implicação lógica. PPC absoluta IMPLICA PPC relativa (se os níveis são iguais, as variações também são iguais). Mas PPC relativa NÃO IMPLICA absoluta — os níveis podem divergir permanentemente enquanto as variações se igualam.</div>
+<div class="gsrc">Fonte do gabarito: Lista 3 Q2</div>
+</div>
+
+<!-- GAB-20 -->
+<div class="gab" id="gab-20">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 20</span><button onclick="document.getElementById('ex-20').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 3 Q3. Choques de demanda que afetam a composição do gasto (tradables vs nontradables) ou a origem dos gastos (doméstico vs externo) mudam a taxa de câmbio real q = EP*/P.</div>
+<div class="step"><strong>(a) Mais gasto em nontradables, menos em tradables:</strong> Demanda por nontradables↑ → P<sub>nontradables</sub>↑ → P (índice geral) ↑ → q = EP*/P ↓ (apreciação real). <span class="ans">A moeda doméstica se APRECIA em termos reais. Intuição: ao desviar demanda para bens não-comercializáveis (cujo preço sobe internamente), o país fica relativamente mais caro em termos internacionais.</span></div>
+<div class="step"><strong>(b) Brasileiros no exterior consomem mais produtos brasileiros:</strong> Demanda por exportações brasileiras↑ → demanda por BRL↑ (estrangeiros e brasileiros no exterior precisam de BRL para comprar) → E <sub>R$/USD</sub> ↓ (BRL aprecia nominalmente) → P<sub>dom</sub> sobe (mais demanda por bens domésticos) → <span class="ans">q = E × P*/P ↓ (apreciação real). BRL se aprecia tanto nominal quanto realmente.</span></div>
+<div class="err"><strong>Erro comum em (b):</strong> Pensar que brasileiros no exterior comprando produtos brasileiros é como um aumento de importações do Brasil para o exterior. O mecanismo correto: do ponto de vista do BdP, são EXPORTAÇÕES brasileiras que aumentam → maior demanda por BRL → apreciação cambial.</div>
+<div class="gsrc">Fonte do gabarito: Lista 3 Q3 (KOM 13ª ed. adaptado)</div>
+</div>
+<!-- GAB-21 -->
+<div class="gab" id="gab-21">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 21</span><button onclick="document.getElementById('ex-21').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 3 Q4. No longo prazo, mudanças na demanda por moeda afetam E nominal mas NÃO afetam q (câmbio real), pois q é determinado por fatores reais. Use o modelo monetário de longo prazo: E = (M/M*) × (L*/L) × q.</div>
+<div class="step"><strong>Aumento permanente em L (demanda por moeda real):</strong>
+<div class="fb">E = <span class="frac"><span class="num">M<sup>s</sup></span><span class="den">M<sup>s*</sup></span></span> · <span class="frac"><span class="num">L*(Y*, R*)</span><span class="den">L(Y, R)</span></span> · q</div>
+Se L↑ (demanda doméstica por moeda aumenta) → denominador sobe → E↓ (apreciação nominal).</div>
+<div class="step"><strong>Intuição:</strong> Com mais demanda por moeda doméstica, a moeda fica mais escassa → valor sobe → câmbio nominal aprecia. No LP: P↓ (menos pressão inflacionária, mais moeda "valendo" o mesmo produto real). <span class="ans">Taxa real q: INALTERADA (mudança na demanda por moeda é um fenômeno monetário, não real). Taxa nominal E: APRECIA (cai). Nível de preços P: CAI.</span></div>
+<div class="step"><strong>Redução permanente em L:</strong> <span class="ans">Efeito oposto: E↑ (depreciação nominal), P↑, q inalterado.</span></div>
+<div class="err"><strong>Erro comum:</strong> Pensar que mudança em L afeta q. No modelo de LP, q é determinado exclusivamente por fatores reais (produtividade, preferências, termos de troca). Mudanças na demanda por moeda são NOMINAIS — afetam E e P mas não a razão EP*/P (que é q).</div>
+<div class="gsrc">Fonte do gabarito: Lista 3 Q4</div>
+</div>
+
+<!-- GAB-22 -->
+<div class="gab" id="gab-22">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 22</span><button onclick="document.getElementById('ex-22').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 3 Q5. Aplicação da teoria de transferências internacionais. A reparação é uma transferência de renda real: o pagador (Polônia) fica mais pobre, o receptor (Rep. Tcheca) fica mais rico. Isso afeta demanda por bens de ambos os países.</div>
+<div class="step"><strong>Mecanismo da transferência (Polônia → Rep. Tcheca):</strong>
+<ul>
+<li>Polônia paga reparação → renda disponível ↓ → demanda por bens poloneses ↓ → P<sub>POL</sub>↓ (ou menos pressão de preços)</li>
+<li>Rep. Tcheca recebe → renda disponível ↑ → demanda por bens tchecos ↑ → P<sub>CZK</sub>↑</li>
+</ul>
+<div class="fb">q<sub>zloty/koruna</sub> = <span class="frac"><span class="num">E · P<sub>CZK</sub></span><span class="den">P<sub>POL</sub></span></span></div>
+Numerador (P<sub>CZK</sub>) sobe + denominador (P<sub>POL</sub>) cai → <span class="ans">q↑ (koruna aprecia realmente em relação ao zloty; zloty deprecia realmente).</span></div>
+<div class="step"><strong>Câmbio nominal:</strong> E (zloty por koruna) também sobe (zloty deprecia nominalmente), pois a demanda por koruna aumenta (República Tcheca é mais rica) e por zloty diminui. <span class="ans">Tanto q quanto E sobem: zloty deprecia real e nominalmente.</span></div>
+<div class="step"><strong>"Fardo secundário" de Keynes:</strong> <span class="ans">Além da transferência direta (custo primário), os termos de troca da Polônia pioram: seus bens ficam relativamente mais baratos (deterioração do câmbio real). A Polônia precisa exportar ainda mais para financiar a reparação, mas o câmbio real desfavorável torna isso mais oneroso — este é o "fardo secundário".</span></div>
+<div class="err"><strong>Erro comum:</strong> Ignorar o efeito sobre os termos de troca. Muitos alunos veem apenas o custo nominal da transferência. O ponto de Keynes é que há um custo adicional (secundário): o câmbio real piora para o país pagador, aumentando o sacrifício real além do valor nominal da reparação.</div>
+<div class="gsrc">Fonte do gabarito: Lista 3 Q5 (KOM 13ª ed.)</div>
+</div>
+
+<!-- GAB-23 -->
+<div class="gab" id="gab-23">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 23</span><button onclick="document.getElementById('ex-23').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 3 Q6 = PI 2025.2 Q2. Clássico: o Tarifaço tem efeitos sobre q real e E nominal. A intuição central: em ambos os casos (demanda OU oferta), o câmbio real de A acaba APRECIANDO, tornando A MENOS competitiva, não mais.</div>
+<div class="step"><strong>(a) Como choque de DEMANDA:</strong> Tarifa → importações de B caem → domésticos de A compram mais bens produzidos em A → demanda por bens de A↑ → P<sub>A</sub>↑ → q<sub>A</sub> = E × P<sub>B</sub>/P<sub>A</sub> ↓ (apreciação real). <br>Nominal: sem mudança monetária → E nominal inalterado (ou aprecia levemente). <span class="ans">q<sub>A</sub>↓ (apreciação real): A fica mais caro em termos internacionais. Competitividade PIORA.</span></div>
+<div class="step"><strong>(b) Como choque de OFERTA:</strong> Tarifa → insumos importados ficam mais caros → custos de produção de A sobem → oferta de bens de A ↓ → P<sub>A</sub>↑ → q<sub>A</sub>↓ (apreciação real). Nominal: E pode cair (ou ficar inalterado). <span class="ans">Mesmo resultado: q<sub>A</sub>↓ (apreciação real). Competitividade PIORA.</span></div>
+<div class="step"><strong>(c) Efeito líquido sobre q real e competitividade:</strong> Ambos os choques (demanda e oferta) causam q↓ (apreciação real de A). O efeito líquido sobre q é <strong>inequivocamente uma apreciação real</strong> — os dois efeitos apontam na mesma direção. <span class="ans">O presidente NÃO melhora a competitividade. O Tarifaço aprecia o câmbio real de A, tornando os bens de A relativamente mais caros no mercado mundial — o efeito oposto ao desejado.</span></div>
+<div class="err"><strong>Erro comum:</strong> Pensar que a tarifa protege a indústria doméstica logo melhora a competitividade. No modelo de LP do KOM Cap. 16, o que importa para competitividade é o câmbio real q. A tarifa eleva preços domésticos e aprecia q, tornando as exportações de A mais caras — na prática, o protecionismo pode deteriorar a posição competitiva global do país.</div>
+<div class="gsrc">Fonte do gabarito: Lista 3 Q6 / PI 2025.2 Q2 (gabarito oficial)</div>
+</div>
+
+<!-- GAB-24 -->
+<div class="gab" id="gab-24">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 24</span><button onclick="document.getElementById('ex-24').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 3 Q7. Fluxos migratórios para países de língua inglesa (ING). A chave é identificar se a migração é predominantemente um choque de demanda ou de oferta, e o efeito sobre q e E no LP.</div>
+<div class="step"><strong>(a) Migração como choque de DEMANDA relativo positivo:</strong> Migrantes chegam a ING → ganham renda → consomem bens locais → demanda por bens de ING↑ (especialmente nontradables: habitação, serviços) → P<sub>ING</sub>↑ → q<sub>ING</sub> = E × P<sub>REM</sub>/P<sub>ING</sub> ↓ (apreciação real) e E (nominal) ↓. <span class="ans">Câmbio real e nominal de ING APRECIAM. Bens de ING ficam mais caros relativamente.</span></div>
+<div class="step"><strong>(b) Migração como choque de OFERTA relativo positivo:</strong> Migrantes aumentam oferta de trabalho em ING → produção ↑ → P<sub>ING</sub>↓ (ou crescimento sem inflação) → q<sub>ING</sub>↑ (depreciação real) e E↑. <span class="ans">Câmbio real e nominal de ING DEPRECIAM. Bens de ING ficam mais baratos relativamente, aumentando a competitividade.</span></div>
+<div class="step"><strong>(c) Efeitos combinados (ambos ocorrem):</strong> Choque de demanda aprecia q; choque de oferta deprecia q. <span class="ans">Efeito líquido sobre q é AMBÍGUO. Depende de qual força domina. Se demanda domina: apreciação. Se oferta domina: depreciação. O The Economist reconhecia essa ambiguidade: evidência não conclusiva sobre se migração é predominantemente de demanda ou oferta.</span></div>
+<div class="err"><strong>Erro comum:</strong> Assumir que mais trabalhadores = sempre mais produção = efeito de oferta. A migração também gera demanda (migrantes consomem, moram, etc.). A análise completa exige tratar os dois lados simultaneamente.</div>
+<div class="gsrc">Fonte do gabarito: Lista 3 Q7</div>
+</div>
+
+<!-- GAB-25 -->
+<div class="gab" id="gab-25">
+<div class="gab-hd"><span class="gab-num">Gabarito — Exercício 25</span><button onclick="document.getElementById('ex-25').scrollIntoView({behavior:'smooth'})">&#8593; Voltar à questão</button></div>
+<div class="hr"><strong>Como ler esta questão:</strong> Lista 4 Q1. Dois subitens: (a) deslocamento de DD por choque de preferência; (b) análise crítica do overshooting na Fig. 17-15 do KOM.</div>
+<div class="step"><strong>(a) Vaca louca → medo de carne importada:</strong> Demanda por importações de carne cai → CA melhora para qualquer dado E e Y → no gráfico D × Y: D sobe (menos importações = mais gasto em domésticos). DD desloca-se para a <strong>direita</strong>: para qualquer E, o produto de equilíbrio Y é maior. <span class="ans">Efeito no DD-AA: equilíbrio move-se para Y↑ e E↓ (apreciação nominal, pois CA melhorou mas PM não mudou e AA se mantém).</span></div>
+<div class="step"><strong>(b) Overshooting na Fig. 17-15 (expansão monetária permanente):</strong> <span class="ans">Sim, é overshooting: E<sub>CP</sub> &gt; E<sub>LP</sub>. No CP, o câmbio deprecia mais do que o nível de LP porque (1) R cai imediatamente (M<sup>s</sup>/P sobe) e (2) E<sup>e</sup> sobe (expectativas de mais depreciação no LP) — ambos empurram E para cima além do necessário. No LP, P sobe → M<sup>s</sup>/P volta ao normal → R sobe de volta → E cai para E<sub>LP</sub>.</span> <br>Undershooting: exigiria que o aumento de Y (produto) no CP gerasse demanda por moeda tão forte que R subisse em vez de cair. É possível teoricamente (como na Lista 2 Q3) mas economicamente improvável.</div>
+<div class="err"><strong>Erro comum em (a):</strong> Esquecer que a curva DD pode deslocar por choques de preferência, não só por política fiscal. Qualquer mudança na demanda por bens domésticos (seja por G, seja por preferências, seja por Y*) desloca DD.</div>
+<div class="gsrc">Fonte do gabarito: Lista 4 Q1 (gabarito do monitor)</div>
+</div>
+<!-- GAB-26 -->
+<div class="gab" id="gab-26">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 26</span><button onclick="document.getElementById('ex-26').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Tarifa TEMPORARIA desloca so DD. Tarifa PERMANENTE desloca DD e AA (via E^e). Em cambio flutuante, a apreciacao endogena corroi o ganho de CA.</div>
+<div class="step"><strong>Tarifa temporaria:</strong> DD sobe (menos importacoes, demanda por domesticos sobe). AA fixa (E^e inalterado). <span class="ans">Y sobe, E cai (apreciacao). CA melhora no CP mas apreciacao compensa parcialmente. No LP: retorno ao original quando tarifa cessa.</span></div>
+<div class="step"><strong>Tarifa permanente:</strong> DD sobe E tambem E^e cai (tarifa permanente aprecia cambio no LP &rarr; E_LP cai &rarr; E^e cai &rarr; AA desloca para baixo). Os dois movimentos (DD sobe, AA desce) se compensam em Y. <span class="ans">Y pouco alterado; E cai mais fortemente. CA: resultado ambiguo/nulo &mdash; a apreciacao cambial desfaz a melhora da tarifa.</span></div>
+<div class="err"><strong>Erro comum:</strong> Supor que tarifa permanente sempre melhora a CA. O cambio flutuante se ajusta (via mudanca de E^e na curva AA) e corroi a melhora de CA &mdash; mecanismo de auto-correcao.</div>
+<div class="gsrc">Fonte: Lista 4 Q2 / KOM Cap.17 Q2</div>
+</div>
+
+<!-- GAB-27 -->
+<div class="gab" id="gab-27">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 27</span><button onclick="document.getElementById('ex-27').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Orcamento equilibrado nao neutraliza a PF. Pelo multiplicador do orcamento equilibrado: DeltaG = DeltaT &rArr; DeltaD = (1&minus;c)&middot;DeltaG &gt; 0, pois c &lt; 1.</div>
+<div class="step"><strong>Mecanismo:</strong> DeltaG = DeltaT = 1. Efeito sobre demanda: DeltaD = DeltaG &minus; c&middot;DeltaT = 1&minus;c &gt; 0. DD desloca para a direita, mas menos do que numa expansao pura. <span class="ans">A lei NAO elimina a PF. Ainda ha Y&uarr; (multiplicador positivo). Resultado: Y sobe, E cai (apreciacao), CA piora levemente.</span></div>
+<div class="err"><strong>Erro comum:</strong> Tratar DeltaT como reducao de DeltaG. O corte de consumo e c&middot;DeltaT, nao DeltaT inteiro. Como c &lt; 1, efeito liquido sobre D e positivo.</div>
+<div class="gsrc">Fonte: Lista 4 Q3 / KOM Cap.17 Q3</div>
+</div>
+
+<!-- GAB-28 -->
+<div class="gab" id="gab-28">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 28</span><button onclick="document.getElementById('ex-28').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> PI 2023.2 Q2. Choque de demanda negativo &rarr; Y&darr; &rarr; L(Y,R)&darr; &rarr; R&darr; &rarr; E&uarr; (depreciacao). BC que quer estabilizar E precisa de PM para manter R &mdash; qual direcao?</div>
+<div class="step"><strong>(a) Grafico duplo &mdash; choque temporario:</strong> Y&darr; &rarr; L(Y,R)&darr; &rarr; excesso de oferta de moeda &rarr; R&darr; &rarr; PDJ: E&uarr; (depreciacao). <span class="ans">CP: R cai, E sobe (depreciacao automatica).</span></div>
+<div class="step"><strong>(b) PM para minimizar efeito sobre E:</strong> Com Y&darr; gerando R&darr; &rarr; pressao de E&uarr;. Para manter E constante: BC deve elevar R. <span class="ans">PM CONTRACIONISTA TEMPORARIA: reduz M^s, R sobe de volta ao nivel original, E se estabiliza. Custo: atividade ainda mais fraca no CP.</span></div>
+<div class="step"><strong>(c) Choque permanente &mdash; PM permanente:</strong> Com M^s&uarr; permanente no LP: P&uarr; &rarr; M^s/P normaliza &rarr; R volta ao original &rarr; E nominal sobe (depreciacao). <span class="ans">Se calibrada corretamente, PM permanente pode manter q real estavel ao compensar queda de P com subida de E nominal.</span></div>
+<div class="err"><strong>Erro comum:</strong> Propor PM expansionista para "recuperar Y" quando o objetivo e estabilizar E. Para manter E constante com pressao de depreciacao (R&darr;), o BC precisa CONTRAIR para elevar R de volta.</div>
+<div class="gsrc">Fonte: PI 2023.2 Q2</div>
+</div>
+
+<!-- GAB-29 -->
+<div class="gab" id="gab-29">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 29</span><button onclick="document.getElementById('ex-29').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Lista 4 Q4. PM expansionista no RM &rarr; R* cai &rarr; pela PDJ, cambio do pais domestico aprecia. No modelo DD-AA do pais domestico: AA desce (retorno externo caiu), DD pode piorar (CA piora com apreciacao).</div>
+<div class="step"><strong>PM temporaria no RM:</strong> R*&darr; &rarr; AA do pais D desce &rarr; E(dom) cai (apreciacao) e Y(dom) cai. <span class="ans">Y cai, E aprecia. No LP: RM volta ao equilibrio, D tambem.</span></div>
+<div class="step"><strong>PM permanente no RM:</strong> Adicionalmente: E^e do pais D cai (LP do RM com mais moeda &rarr; mais precos no RM &rarr; RM deprecia no LP &rarr; E(dom) aprecia mais no LP). <span class="ans">Efeito mais forte: Y cai mais, E aprecia mais.</span></div>
+<div class="step"><strong>Resposta do pais D &mdash; PM vs PF:</strong> PM de D: expandir M^s &rarr; R(D) cai &rarr; E(dom) deprecia &rarr; CA melhora &rarr; Y sobe. PF de D: G&uarr; &rarr; DD sobe &rarr; Y sobe, mas E aprecia ainda mais. <span class="ans">Diferenca: PM e melhor &mdash; recupera Y E evita apreciacao adicional. PF recupera Y mas agrava a apreciacao e a piora de CA.</span></div>
+<div class="err"><strong>Erro comum:</strong> Assumir que PM do RM afeta D diretamente via precos. O canal principal e via PDJ: R*&darr; &rarr; cambio de D aprecia &rarr; CA de D piora.</div>
+<div class="gsrc">Fonte: Lista 4 Q4</div>
+</div>
+
+<!-- GAB-30 -->
+<div class="gab" id="gab-30">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 30</span><button onclick="document.getElementById('ex-30').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Lista 4 Q5. Expectativas racionais: o ANUNCIO de PM futura desloca AA imediatamente (via E^e), ANTES da implementacao. O cambio se move na data do anuncio.</div>
+<div class="step"><strong>Apos o anuncio (antes da implementacao):</strong> Mercado antecipa M^s&uarr; no futuro &rarr; E^e&uarr; (espera-se depreciacao) &rarr; retorno de ativos estrangeiros sobe hoje &rarr; AA sobe (para qualquer Y, E de equilibrio sobe). <span class="ans">Na data do anuncio: E&uarr; (depreciacao antecipada) e Y&uarr; (DD inalterada, AA sobe &rarr; intersecao em Y mais alto).</span></div>
+<div class="step"><strong>Na implementacao:</strong> Se anuncio foi totalmente crivel &rarr; mercado ja incorporou tudo &rarr; quando M^s sobe de fato, efeito adicional e pequeno ou zero. <span class="ans">Com antecipacao perfeita: implementacao so ajusta o mercado monetario (R&darr;) sem nova mudanca em E.</span></div>
+<div class="step"><strong>Comparacao com PM-surpresa:</strong> <span class="ans">Com PM-surpresa: E deprecia e Y sobe apenas na data de implementacao. O total de depreciacao e o mesmo &mdash; so a distribuicao no tempo difere.</span></div>
+<div class="err"><strong>Erro comum:</strong> Supor que anuncio + implementacao causam dois saltos cumulativos de cambio. Na realidade: o total de depreciacao e o mesmo; o anuncio apenas ANTECIPA parte do impacto cambial.</div>
+<div class="gsrc">Fonte: Lista 4 Q5 / KOM Cap.17 Q8</div>
+</div>
+<!-- GAB-31 -->
+<div class="gab" id="gab-31">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 31</span><button onclick="document.getElementById('ex-31').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Balan&ccedil;o do BC. Intervencao cambial = compra ou venda de ativos externos. Esterilizacao = operacao compensatoria em ativos domesticos para manter M^s constante.</div>
+<div class="step"><strong>(a) Intervencao NAO-esterilizada (vende US de ativos externos):</strong>
+Balanco inicial: Ativos Externos = 1.500; Ativos Domesticos = 500; Passivo = 2.000.
+Apos venda de 300 em ativos externos: Ativos Externos = 1.200; Passivo = 1.700.
+<span class="ans">M^s cai de 2.000 para 1.700 &mdash; a intervencao e CONTRACIONARIA. O BC retirou moeda da circulacao ao vender divisas.</span></div>
+<div class="step"><strong>(b) Esterilizacao (compra 300 em ativos domesticos):</strong>
+Balanco final: Ativos Externos = 1.200; Ativos Domesticos = 800; Passivo = 2.000.
+<span class="ans">M^s permanece em 2.000 &mdash; a esterilizacao neutralizou o efeito contracionario. A oferta de moeda ficou inalterada.</span></div>
+<div class="step"><strong>(c) Implicacao para PM em cambio fixo:</strong>
+<span class="ans">Em cambio fixo, o BC e OBRIGADO a intervir para manter E = Barra-E. Cada intervencao muda M^s. Para manter controle de M^s, o BC precisa esterilizar &mdash; mas esterilizacao sistematica pode esgotar reservas ou ativos domesticos. No limite, o BC perde a capacidade de manter o cambio fixo e a PM ao mesmo tempo &mdash; e o argumento pelo qual PM e ineficaz em cambio fixo sem esterilizacao.</span></div>
+<div class="err"><strong>Erro comum:</strong> Confundir ativos externos (reservas internacionais) com ativos domesticos (titulos publicos em carteira do BC). Esterilizacao opera nos DOMESTICOS para compensar a variacao dos EXTERNOS.</div>
+<div class="gsrc">Fonte: questao nova (anotacoes do professor &mdash; Bloco 8)</div>
+</div>
+
+<!-- GAB-32 -->
+<div class="gab" id="gab-32">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 32</span><button onclick="document.getElementById('ex-32').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Em cambio fixo: o BC perde autonomia monetaria. PF muito eficaz (sem crowding-out cambial). PM completamente ineficaz (intervencao cancela qualquer mudanca em M^s). Desvalorizacao = salto discreto no nivel de E fixo.</div>
+<div class="step"><strong>(a) Expansao fiscal (G&uarr;) em cambio fixo:</strong>
+DD sobe &rarr; Y&uarr; &rarr; R&uarr; (pressao de apreciacao: E pressiona para cair abaixo de Barra-E) &rarr; BC intervem: COMPRA divisas &rarr; M^s&uarr; &rarr; AA sobe &rarr; Y sobe ainda mais.
+<span class="ans">Resultado: Y sobe muito (efeito amplificado pela PM endogena). Reservas internacionais SOBEM (BC comprou divisas). PF e muito eficaz em cambio fixo.</span></div>
+<div class="step"><strong>(b) PM expansionista (M^s&uarr;) em cambio fixo &mdash; ineficacia:</strong>
+M^s&uarr; &rarr; AA sobe &rarr; E pressiona para subir acima de Barra-E &rarr; BC intervem: VENDE divisas &rarr; M^s&darr; de volta ao original &rarr; AA retorna ao nivel inicial.
+<span class="ans">Resultado final: Y e E inalterados. A PM foi completamente anulada pela intervencao obrigada do BC. O professor escreve "ineficaz" no grafico DD-AA.</span></div>
+<div class="step"><strong>(c) Desvalorizacao (E sobe de Barra-E1 para Barra-E2):</strong>
+Novo E mais alto &rarr; q&uarr; (depreciacao real) &rarr; CA melhora &rarr; DD sobe &rarr; Y&uarr;.
+<span class="ans">Y sobe no CP, similar ao efeito de PF. Porem: desvalorizacao muda E^e (expectativas) e pode gerar inflacao (importados ficam mais caros). Custo reputacional: perde credibilidade do regime de cambio fixo.</span></div>
+<div class="err"><strong>Erro comum:</strong> Supor que expansao de M^s em cambio fixo aumenta Y no CP. A intervencao do BC cancela automaticamente qualquer expansao monetaria &mdash; o mecanismo de cancelamento e instantaneo em modelos com perfeita mobilidade de capital.</div>
+<div class="gsrc">Fonte: questao nova (anotacoes do professor &mdash; Bloco 8)</div>
+</div>
+
+<!-- GAB-33 -->
+<div class="gab" id="gab-33">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 33</span><button onclick="document.getElementById('ex-33').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> PI 2023.2 Q3. Alta dos Treasuries americanos &rarr; R* sobe &rarr; pela PDJ, paises emergentes precisam elevar R domestico ou aceitar depreciacao cambial. COPOM monitora isso para calibrar a Selic.</div>
+<div class="step"><strong>(a) Por que juros no mundo sobem quando Treasuries sobem:</strong>
+Treasuries de 10 anos representam o ativo livre de risco global. Se R*(EUA)&uarr;: investidores globais migram para ativos americanos &rarr; saida de capital de outros paises &rarr; pressao de depreciacao nos cambios &rarr; para manter cambio estavel, bancos centrais do mundo precisam subir os proprios juros.
+<span class="ans">A PDJ NAO implica que os juros dos outros paises PRECISAM subir obrigatoriamente. O que a PDJ implica e que, dado R*, se um pais NAO sobe juros, seu cambio deprecia. A escolha e entre: (1) subir juros e manter cambio; ou (2) manter juros e aceitar depreciacao.</span></div>
+<div class="step"><strong>(b) Preocupacao do COPOM com alta dos Treasuries:</strong>
+<div class="fb" style="font-size:.9em;line-height:2">R<sub>SELIC</sub> = R<sub>FED</sub> + &rho; + <span class="frac"><span class="num">E<sup>e</sup> &minus; E</span><span class="den">E</span></span></div>
+Se R*(EUA)&uarr; e a Selic cai 50 bps: diferencial de juros (Selic &minus; FED) cai &rarr; atratividade do BRL cai &rarr; capital sai &rarr; BRL deprecia &rarr; inflacao importada (pass-through cambial) &rarr; meta de inflacao fica mais dificil de atingir.
+<span class="ans">O COPOM teme que a queda da Selic, combinada com alta dos Treasuries, gere depreciacao excessiva do BRL, alimentando inflacao via importados. O "maior aten&ccedil;ao" nao significa parar os cortes &mdash; significa calibrar a velocidade dos cortes monitorando o diferencial de juros.</span></div>
+<div class="err"><strong>Erro comum:</strong> Confundir juros de curto prazo (Fed Funds, Selic) com juros de longo prazo (Treasury 10 anos). A pergunta e sobre Treasuries longos, que refletem expectativas de inflacao e politica monetaria futura &mdash; nao so a taxa de politica atual do Fed.</div>
+<div class="gsrc">Fonte: PI 2023.2 Q3a e Q3b</div>
+</div>
+
+<!-- GAB-34 -->
+<div class="gab" id="gab-34">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 34</span><button onclick="document.getElementById('ex-34').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Trilema de Mundell-Fleming: apenas dois dos tres objetivos sao simultaneamente possiveis: (1) cambio fixo, (2) livre mobilidade de capital, (3) PM autonoma. Cada regime historico escolheu dois e sacrificou o terceiro.</div>
+<div class="step"><strong>Padrao-ouro (ate 1914):</strong>
+Escolheu: cambio fixo (ouro) + livre mobilidade de capital. Sacrificou: PM autonoma.
+<span class="ans">Ajuste via mecanismo preco-fluxo (Hume): deficit &rarr; saida de ouro &rarr; deflacao &rarr; competitividade melhora &rarr; equilibrio restaurado. Simetrico entre paises, mas exige flexibilidade de precos e salarios.</span></div>
+<div class="step"><strong>Bretton Woods (1944-1971):</strong>
+Escolheu: cambio fixo ao USD + certa PM autonoma. Sacrificou: livre mobilidade de capital (controles de capital).
+<span class="ans">USD era o centro: fixo ao ouro (US/oz); demais moedas fixas ao USD com banda estreita. FMI emprestava para paises em desajuste. Colapso em 1971: Nixon encerra convertibilidade ouro-dolar (Dilema de Triffin).</span></div>
+<div class="step"><strong>Pos-Bretton Woods (1971-):</strong>
+Maioria dos paises: cambio flutuante + livre capital = PM autonoma.
+<span class="ans">Alta volatilidade cambial como "preco" da autonomia monetaria. Zona do Euro: caso extremo de cambio fixo irrevogavel + livre capital &mdash; sem PM nacional (BCE centraliza).</span></div>
+<div class="err"><strong>Erro comum:</strong> Supor que no padrao-ouro nao havia PM. Havia, mas era endogena (determinada pelo fluxo de ouro), nao autonoma. O BC nao podia expandir moeda livremente &mdash; tinha que manter a conversibilidade.</div>
+<div class="gsrc">Fonte: questao nova (KOM Cap.19)</div>
+</div>
+
+<!-- GAB-35 -->
+<div class="gab" id="gab-35">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 35</span><button onclick="document.getElementById('ex-35').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Bretton Woods escolheu cambio fixo + PM limitada sacrificando livre capital. O Dilema de Triffin e a contradicao interna que tornou o sistema insustentavel: para o mundo ter liquidez, os EUA precisavam de deficits &mdash; mas deficits acumulados solapavam a credibilidade do dolar.</div>
+<div class="step"><strong>(a) Trilema de Bretton Woods:</strong>
+Dois objetivos privilegiados: cambio fixo (paridades fixas ao USD/ouro) + PM com certa autonomia (via controles de capital). Sacrificado: livre mobilidade de capital (controles eram a norma). <span class="ans">O FMI fornecia emprestimos para paises em dificuldade de BdP, permitindo ajuste sem abandonar a paridade.</span></div>
+<div class="step"><strong>(b) Dilema de Triffin:</strong>
+Para que o mundo usasse dolares como reserva, os EUA precisavam exportar dolares (via deficits no BdP). Mas deficits acumulados &rarr; mais dolares em circulacao do que ouro em Fort Knox &rarr; duvida sobre a conversibilidade ouro-dolar (US/oz) &rarr; corrida ao ouro &rarr; sistema implode.
+<span class="ans">O dilema: liquidez global exige deficits americanos, mas deficits acumulados destroem a confianca na ancoragem ao ouro. E uma contradicao irresolvivel dentro do sistema.</span></div>
+<div class="step"><strong>(c) Apos Nixon (1971):</strong>
+EUA passou a priorizar: PM autonoma + livre capital. Sacrificou: cambio fixo. <span class="ans">Inaugurou o regime de cambio flutuante para as principais moedas. EUA pode conduzir PM sem se preocupar com paridade &mdash; mas o dolar ainda e a moeda de reserva mundial (exorbitante privilege).</span></div>
+<div class="err"><strong>Erro comum:</strong> Descrever o Dilema de Triffin como um problema de "impressao excessiva de moeda". Nao e: e uma contradicao estrutural entre a funcao de moeda de reserva global e a necessidade de manter credibilidade da conversibilidade ao ouro.</div>
+<div class="gsrc">Fonte: questao nova (KOM Cap.19)</div>
+</div>
+
+<!-- GAB-36 -->
+<div class="gab" id="gab-36">
+<div class="gab-hd"><span class="gab-num">Gabarito &mdash; Exercicio 36</span><button onclick="document.getElementById('ex-36').scrollIntoView({behavior:'smooth'})">&#8593; Voltar</button></div>
+<div class="hr"><strong>Como ler:</strong> Questao de multipla escolha sobre trilema e crises cambiais. Avalie cada afirmativa pelo trilema: com cambio fixo + capital livre &rarr; sem PM autonoma. Crise cambial = ataque especulativo quando reservas sao insuficientes.</div>
+<div class="step"><strong>Afirmativa I &mdash; "Economia com plena mobilidade de capital e cambio fixo nao pode ter PM independente":</strong> Pelo trilema: fixo + capital livre &rarr; sem PM. <span class="ans">VERDADEIRA.</span></div>
+<div class="step"><strong>Afirmativa II &mdash; "Currency board sacrifica PM autonoma mas garante credibilidade anti-inflacionaria":</strong> Currency board = cambio fixo rigido com cobertura 100% em reservas &rarr; PM completamente endogena. Credibilidade anti-inflacionaria e justamente o motivo (Argentina nos 90s adotou para combater hiperinflacao). <span class="ans">VERDADEIRA.</span></div>
+<div class="step"><strong>Afirmativa III &mdash; "BC com reservas abundantes sempre consegue defender cambio fixo indefinidamente":</strong> FALSA. Ataques especulativos podem superar qualquer nivel de reservas se o mercado acreditar que o cambio e insustentavel &mdash; a crise asiatica de 1997 mostrou isso. Reservas abundantes ajudam mas nao garantem defesa indefinida. <span class="ans">FALSA.</span></div>
+<div class="step"><strong>Afirmativa IV &mdash; "Euro = cambio irrevogavel + plena mobilidade de capital, sem PM nacional":</strong> Exatamente a escolha da Zona do Euro no trilema &mdash; BCE centraliza PM, cambios entre membros sao fixos. <span class="ans">VERDADEIRA.</span></div>
+<div class="ans">Corretas: I, II e IV &rarr; Alternativa <strong>(b)</strong>.</div>
+<div class="err"><strong>Erro comum:</strong> Marcar III como verdadeira. A falacia das reservas abundantes e um classico: em 1992, o Banco da Inglaterra tinha reservas substanciais mas nao conseguiu defender a libra contra o ataque de George Soros (queda do ERM europeu).</div>
+<div class="gsrc">Fonte: questao nova (KOM Cap.19)</div>
+</div>
+
+</section><!-- fecha #gabarito -->
+<!-- ==================== APENDICE ==================== -->
+<section class="sec" id="apendice">
+<h2>&#128196; Ap&ecirc;ndice &mdash; Quest&otilde;es Restantes das Listas</h2>
+<p style="color:#555;margin-bottom:1.5em">As quest&otilde;es abaixo pertencem &agrave;s listas oficiais mas n&atilde;o foram inclu&iacute;das no corpo principal do guia. S&atilde;o importantes para compreens&atilde;o completa e podem aparecer na prova.</p>
+
+<!-- AP-1: Lista 1 Q2 -->
+<div class="app-i" id="ap-1">
+<h4>AP-1 &mdash; Lista 1, Quest&atilde;o 2 &mdash; Tarifas, poupan&ccedil;a e conta corrente</h4>
+<p><strong>Origem:</strong> Lista 1 Q2 &nbsp;|&nbsp; <strong>Gabarito:</strong> Lista 1 Resolu&ccedil;&atilde;o (gabarito sint&eacute;tico oficial)</p>
+<p style="margin-top:.8em"><strong>Enunciado:</strong> Considere uma economia aberta em equil&iacute;brio. O novo presidente anuncia uma s&eacute;rie de restri&ccedil;&otilde;es &agrave;s importa&ccedil;&otilde;es (tarifas, barreiras etc.). Analise os efeitos dessas restri&ccedil;&otilde;es sobre:</p>
+<ul>
+<li>(a) O saldo em conta corrente (CA)</li>
+<li>(b) A poupan&ccedil;a privada (S<sub>p</sub>)</li>
+<li>(c) O investimento interno (I)</li>
+<li>(d) O d&eacute;ficit p&uacute;blico (G &minus; T)</li>
+</ul>
+<div class="cb" style="margin-top:1em">
+<strong>Resolu&ccedil;&atilde;o completa:</strong>
+<p style="margin-top:.6em">A identidade fundamental &eacute;: CA = S<sub>p</sub> + S<sub>pub</sub> &minus; I = (S<sub>p</sub> &minus; I) + (T &minus; G).</p>
+<p>Restrições às importações:</p>
+<ul>
+<li><strong>Efeito sobre CA:</strong> Incerto. A restri&ccedil;&atilde;o reduz importações diretamente &mdash; mas altera também a poupança, o investimento e até a arrecadação. O efeito líquido sobre CA depende de como cada componente reage. <span style="color:#c62828"><strong>O gabarito oficial diz: o efeito &eacute; INCERTO.</strong></span></li>
+<li><strong>Poupan&ccedil;a privada:</strong> Se as restri&ccedil;&otilde;es elevam os pre&ccedil;os internos de produtos essenciais, a renda real dos consumidores cai, o que pode REDUZIR a poupan&ccedil;a.</li>
+<li><strong>Investimento:</strong> A incerteza comercial pode levar as empresas a adiar planos de expans&atilde;o &rarr; I pode cair.</li>
+<li><strong>D&eacute;ficit p&uacute;blico:</strong> Tarifas geram receita fiscal adicional (T&uarr;) &rarr; d&eacute;ficit pode diminuir.</li>
+</ul>
+<p><strong>Conclus&atilde;o:</strong> O efeito das tarifas sobre a CA &eacute; ambíguo porque os canais se compensam. Isolar um &uacute;nico efeito requer hip&oacute;teses sobre o comportamento dos outros componentes.</p>
+</div>
+</div>
+
+<!-- AP-2: Lista 1 Q3 -->
+<div class="app-i" id="ap-2">
+<h4>AP-2 &mdash; Lista 1, Quest&atilde;o 3 &mdash; D&eacute;ficits G&ecirc;meos e Identidade Nacional</h4>
+<p><strong>Origem:</strong> Lista 1 Q3 &nbsp;|&nbsp; <strong>Gabarito:</strong> Lista 1 Resolu&ccedil;&atilde;o (gabarito sint&eacute;tico oficial)</p>
+<p style="margin-top:.8em"><strong>Enunciado:</strong> A tabela abaixo apresenta dados de poupan&ccedil;a e investimento para a Uni&atilde;o Europeia (% do PIB):</p>
+<table style="width:100%;border-collapse:collapse;font-size:.88em;margin:1em 0">
+<thead><tr style="background:#1a3a8f;color:#fff"><th style="padding:.4em .6em">Ano</th><th>Poupan&ccedil;a Privada</th><th>Investimento</th><th>Poupan&ccedil;a do Governo</th><th>CA</th></tr></thead>
+<tbody>
+<tr style="background:#f9f9ff"><td style="padding:.35em .6em">2011</td><td>22,4</td><td>19,9</td><td>&minus;2,9</td><td>&minus;0,4</td></tr>
+<tr><td style="padding:.35em .6em">2012</td><td>22,1</td><td>18,6</td><td>&minus;2,9</td><td>0,6</td></tr>
+<tr style="background:#f9f9ff"><td style="padding:.35em .6em">2013</td><td>21,1</td><td>17,8</td><td>&minus;2,6</td><td>0,7</td></tr>
+<tr><td style="padding:.35em .6em">2014</td><td>20,8</td><td>17,8</td><td>&minus;2,1</td><td>0,9</td></tr>
+<tr style="background:#f9f9ff"><td style="padding:.35em .6em">2015</td><td>21,3</td><td>18,1</td><td>&minus;1,7</td><td>1,5</td></tr>
+</tbody>
+</table>
+<ul>
+<li>(a) Verifique se a identidade CA = S<sub>p</sub> + S<sub>pub</sub> &minus; I est&aacute; sendo satisfeita.</li>
+<li>(b) Os dados sugerem que as pol&iacute;ticas de consolida&ccedil;&atilde;o fiscal da Zona do Euro (austeridade) fizeram efeito? Qual a hip&oacute;tese que explicaria a melhora da CA sem que o S<sub>p</sub> variasse da forma esperada?</li>
+<li>(c) (i) A melhora da CA indica necessariamente melhora do bem-estar da popula&ccedil;&atilde;o? (ii) Qual seria a pol&iacute;tica macroecon&ocirc;mica mais fact&iacute;vel para reduzir o d&eacute;ficit externo de um pa&iacute;s?</li>
+</ul>
+<div class="cb" style="margin-top:1em">
+<strong>Resolu&ccedil;&atilde;o:</strong>
+<p><strong>(a) S&minus;I constante:</strong> CA = S<sub>p</sub> + S<sub>pub</sub> &minus; I. Verificando 2011: 22,4 + (−2,9) − 19,9 = −0,4 ✓. A identidade &eacute; satisfeita por constru&ccedil;&atilde;o (tautologia contábil).</p>
+<p><strong>(b) Austeridade fez efeito?</strong> Sim &mdash; S<sub>pub</sub> melhorou de −2,9 (2011) para −1,7 (2015). No entanto, a melhora de CA n&atilde;o veio principalmente pelo aumento de S<sub>p</sub> (que caiu). A <strong>hip&oacute;tese da equival&ecirc;ncia ricardiana</strong> pode explicar: se os agentes privados anteviram que a austeridade fiscal hoje implicaria menos impostos futuros, eles reduziram a poupan&ccedil;a preventiva.</p>
+<p><strong>(c) (i)</strong> N&atilde;o necessariamente. Melhora de CA via queda de I (como ocorreu: I caiu de 19,9 para 18,1) pode refletir recess&atilde;o e queda de confian&ccedil;a &mdash; n&atilde;o melhora de bem-estar. <strong>(ii)</strong> A pol&iacute;tica mais fact&iacute;vel &eacute; ajuste fiscal (aumento de S<sub>pub</sub>): elevar T ou reduzir G, o que melhora o saldo fiscal e, via identidade, melhora CA. Pol&iacute;tica cambial (desvalorizacao) tambem funciona mas tem custo inflacionario.</p>
+</div>
+</div>
+
+<!-- AP-3: Lista 3 Q7 -->
+<div class="app-i" id="ap-3">
+<h4>AP-3 &mdash; Lista 3, Quest&atilde;o 7 &mdash; Fluxos migrat&oacute;rios e a taxa de c&acirc;mbio no longo prazo</h4>
+<p><strong>Origem:</strong> Lista 3 Q7 &nbsp;|&nbsp; <strong>Gabarito:</strong> Sem gabarito oficial &mdash; derivado da teoria do Cap. 16</p>
+<p style="margin-top:.8em"><em>Ver Exerc&iacute;cio 24 (ex-24) no corpo principal do guia &mdash; este ap&ecirc;ndice apresenta a vers&atilde;o completa do enunciado e a resolu&ccedil;&atilde;o com todos os tr&ecirc;s itens.</em></p>
+<p style="margin-top:.6em"><strong>Enunciado completo:</strong> Considere duas economias: ING (pa&iacute;ses de l&iacute;ngua inglesa) e REM (resto do mundo). Fluxos migrat&oacute;rios para ING. Em todos os casos, as economias partem do equil&iacute;brio.</p>
+<ul>
+<li>(a) Considere o fluxo migrat&oacute;rio como um choque relativo positivo de DEMANDA. Justifique e mostre o efeito sobre q e E nominais.</li>
+<li>(b) Considere como choque relativo positivo de OFERTA. Justifique e mostre os efeitos.</li>
+<li>(c) Compare os dois casos. Se a migra&ccedil;&atilde;o tem ambas as caracter&iacute;sticas (demanda e oferta), o que esperar na realidade?</li>
+</ul>
+<div class="cb" style="margin-top:.8em">
+<strong>Resolu&ccedil;&atilde;o detalhada:</strong>
+<p><strong>(a) Choque de demanda:</strong> Migrantes chegam a ING &rarr; ganham renda e consomem localmente &rarr; demanda por bens de ING&uarr; (especialmente nontradables: habitacao, servicos) &rarr; P<sub>ING</sub>&uarr; &rarr; q<sub>ING</sub> = E &times; P<sub>REM</sub>/P<sub>ING</sub> cai (apreciacao real). E nominal de ING tambem aprecia. <strong>Intuicao:</strong> demanda extra por bens de ING torna-os mais caros &rarr; moeda de ING aprecia real e nominalmente.</p>
+<p><strong>(b) Choque de oferta:</strong> Migrantes aumentam oferta de trabalho em ING &rarr; producao&uarr; &rarr; P<sub>ING</sub>&darr; (ou cresce sem inflacao) &rarr; q<sub>ING</sub>&uarr; (depreciacao real) e E nominal&uarr;. <strong>Intuicao:</strong> mais producao disponivel em ING &rarr; bens de ING ficam mais baratos &rarr; moeda deprecia (mais bens por unidade de moeda estrangeira).</p>
+<p><strong>(c) Ambos:</strong> Demanda aprecia q; oferta deprecia q. Efeito l&iacute;quido &eacute; <strong>ambiguo</strong> &mdash; depende de qual forca domina. O artigo do The Economist n&atilde;o consegue concluir porque a evidencia nao distingue qual forca prevalece. Em termos de politica: nao ha uma recomendacao cambial univoca para paises receptores de migrantes.</p>
+</div>
+</div>
+
+<!-- AP-4: Lista 4 Q6 -->
+<div class="app-i" id="ap-4">
+<h4>AP-4 &mdash; Lista 4, Quest&atilde;o 6 &mdash; Curva J e modelo DD-AA</h4>
+<p><strong>Origem:</strong> Lista 4 Q6 (KOM Cap.17, Q9) &nbsp;|&nbsp; <strong>Gabarito:</strong> Sem gabarito oficial &mdash; derivado do KOM</p>
+<p style="margin-top:.8em"><strong>Enunciado:</strong> Como voc&ecirc; desenharia o diagrama DD-AA quando a resposta da conta corrente &agrave;s varia&ccedil;&otilde;es na taxa de c&acirc;mbio segue uma curva em J? Use esse diagrama modificado para examinar os efeitos de mudan&ccedil;as temporárias e permanentes na pol&iacute;tica monet&aacute;ria e fiscal.</p>
+<div class="cb" style="margin-top:.8em">
+<strong>Resolu&ccedil;&atilde;o:</strong>
+<p><strong>Curva J:</strong> No curto prazo imediato, uma deprecia&ccedil;&atilde;o de E PIORA o saldo da CA antes de melhorar. Motivo: pre&ccedil;os e quantidades s&atilde;o r&iacute;gidos no curto imediato &mdash; o valor das importa&ccedil;&otilde;es (em moeda domestica) sobe imediatamente (mais caro em reais), mas as quantidades nao ajustam &rarr; valor total das importa&ccedil;&otilde;es aumenta antes de cair.</p>
+<p><strong>Efeito sobre DD:</strong> Com curva J, a curva DD pode ser temporariamente inclinada positivamente ou mais vertical na regiao de curto prazo. Em vez de: E&uarr; &rarr; CA&uarr; &rarr; DD para a direita, temos: E&uarr; &rarr; CA&darr; (curto prazo) &rarr; DD pode deslocar para a esquerda inicialmente. Apos a curva J se completar (prazo mais longo), a relacao normal se restabelece.</p>
+<p><strong>PM temporaria com curva J:</strong> M^s&uarr; &rarr; E&uarr; &rarr; no curto imediato CA piora (curva J) &rarr; o efeito expansionista sobre Y e atenuado ou revertido no curtissimo prazo. No prazo medio, CA melhora e o efeito normal da PM se manifesta.</p>
+<p><strong>PF temporaria com curva J:</strong> G&uarr; &rarr; DD sobe &rarr; Y&uarr; &rarr; AA &rarr; E cai (apreciacao) &rarr; com curva J: apreciacao no curto imediato pode nao piorar CA tanto quanto o esperado (pois quantidades nao ajustam). O efeito crowding-out via cambio e menor no curto prazo com curva J.</p>
+</div>
+</div>
+
+<!-- AP-5: Lista 4 Q7 -->
+<div class="app-i" id="ap-5">
+<h4>AP-5 &mdash; Lista 4, Quest&atilde;o 7 &mdash; Pass-through cambial no modelo DD-AA</h4>
+<p><strong>Origem:</strong> Lista 4 Q7 &nbsp;|&nbsp; <strong>Gabarito:</strong> Sem gabarito oficial &mdash; derivado da teoria</p>
+<p style="margin-top:.8em"><strong>Enunciado:</strong> No modelo padr&atilde;o, o n&iacute;vel de pre&ccedil;os P &eacute; fixo no curto prazo. Considere agora que:</p>
+<div class="fb" style="margin:.8em auto">P = (1 &minus; &alpha;) &times; P<sub>d</sub> + &alpha; &times; (E &times; P*)</div>
+<p>onde P<sub>d</sub> e P* s&atilde;o fixos no CP e &alpha; &isin; (0,1). Responda:</p>
+<ul>
+<li>(a) Qual hip&oacute;tese est&aacute; sendo flexibilizada? Por que mudar?</li>
+<li>(b) Qual o significado econ&ocirc;mico de &alpha;? Que tipo de pa&iacute;s tem &alpha; maior?</li>
+<li>(c) Avalie o impacto sobre a curva DD. O que muda para &alpha; &rarr; 0, &alpha; &rarr; 1 e &alpha; intermedi&aacute;rio?</li>
+<li>(d) Com &alpha; = 0,2: efeitos de expans&atilde;o permanente de G e de M^s. O que muda em rela&ccedil;&atilde;o ao modelo padr&atilde;o?</li>
+</ul>
+<div class="cb" style="margin-top:.8em">
+<strong>Resolu&ccedil;&atilde;o:</strong>
+<p><strong>(a) Hip&oacute;tese relaxada:</strong> No modelo padr&atilde;o, P &eacute; completamente fixo no CP (pass-through zero). Aqui, o &iacute;ndice de pre&ccedil;os depende de E &mdash; uma deprecia&ccedil;&atilde;o eleva imediatamente P via custo dos bens importados. Isso adiciona realismo: em pa&iacute;ses com alta dependencia de importa&ccedil;&otilde;es, o cambio afeta os pre&ccedil;os domesticos mesmo no CP.</p>
+<p><strong>(b) Significado de &alpha;:</strong> &alpha; = parcela de bens importados no &iacute;ndice de pre&ccedil;os (pass-through cambial). Pa&iacute;ses mais abertos ao comercio (pequenas economias abertas, pa&iacute;ses em desenvolvimento com alta importacao de insumos) tendem a ter &alpha; maior. Pa&iacute;ses grandes com economia fechada (EUA) tem &alpha; menor.</p>
+<p><strong>(c) Impacto na curva DD:</strong> Com &alpha; &gt; 0, uma deprecia&ccedil;&atilde;o (E&uarr;) eleva P &rarr; M^s/P cai &rarr; R sobe parcialmente &rarr; isso ATENUA o efeito expansionista da depreciacao sobre Y. A curva DD fica mais VERTICAL (menos inclinada para baixo) quanto maior for &alpha;.
+Para &alpha; &rarr; 0: volta ao modelo padr&atilde;o (DD inclinada normalmente).
+Para &alpha; &rarr; 1: P = E&middot;P* (pass-through total) &rarr; q = E&middot;P*/P = 1 (constante) &rarr; DD completamente vertical &rarr; cambio nao afeta CA &rarr; DD nao tem inclinacao.
+Para &alpha; intermedi&aacute;rio: DD menos inclinada que o padr&atilde;o mas nao vertical.</p>
+<p><strong>(d) Com &alpha; = 0,2:</strong>
+Expans&atilde;o permanente de G: DD sobe &rarr; Y&uarr;, E cai. E cai &rarr; P cai um pouco (via &alpha;&middot;E&middot;P*) &rarr; M^s/P sobe &rarr; R cai &rarr; amplia levemente o efeito expansionista. Diferenca vs modelo padrao: pequena, dado &alpha; baixo.
+Expansao monetaria M^s&uarr;: M^s&uarr; &rarr; E&uarr; &rarr; P&uarr; (via &alpha;) &rarr; M^s/P cai parcialmente &rarr; efeito sobre R e Y e MENOR do que no modelo padrao. A depreciacao "se autocancela" parcialmente via alta de precos. Overshooting e menor.</p>
+</div>
+</div>
+
+</section><!-- fecha #apendice -->
+<script>
+// Toggle glossary panel
+function toggleG(exId) {
+  var p = document.getElementById('gp-' + exId);
+  if (p) p.classList.toggle('open');
+}
+
+// Reveal gabarito on button click
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.rb').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var gabId = this.getAttribute('data-gab');
+      if (!gabId) return;
+      var gab = document.getElementById(gabId);
+      if (!gab) return;
+      // Close all other gabaritos for anti-spoiler effect
+      document.querySelectorAll('.gab.open').forEach(function(g) {
+        if (g.id !== gabId) g.classList.remove('open');
+      });
+      gab.classList.add('open');
+      gab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+});
+
+// Smooth scroll for TOC links
+document.querySelectorAll('.toc a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
